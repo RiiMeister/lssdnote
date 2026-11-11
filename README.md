@@ -5,7 +5,7 @@ Website buku panduan lapangan dan standar operasional kepolisian (*Field Operati
 
 ---
 
-## 👥 Kredit & Apresiasi Resmi (Server Nusa V)
+## 👥 Credit (Server Nusa V)
 
 Penyusunan regulasi dan manual ini merupakan hasil dedikasi tim Nusa V:
 - **Pakle (bangtupai)** — *Server Community Management*
