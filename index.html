@@ -156,16 +156,19 @@
         <!-- Menu Items List -->
         <div class="flex-1 overflow-y-auto py-3 px-2 space-y-6">
             <div>
-                <p class="px-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Navigasi Utama</p>
+                <p class="px-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">NAVIGASI UTAMA</p>
                 <nav class="space-y-0.5">
                     <button onclick="switchTab('beranda')" id="nav-beranda" class="nav-item active w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-house-chimney w-6 text-center mr-2 text-lssd-gold"></i> Beranda & Gambaran
-                    </button>
-                    <button onclick="switchTab('radio')" id="nav-radio" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-walkie-talkie w-6 text-center mr-2 text-emerald-400"></i> Komunikasi & 10-Codes
+                        <i class="fa-solid fa-house-chimney w-6 text-center mr-2 text-lssd-gold"></i> Home
                     </button>
                     <button onclick="switchTab('taktis')" id="nav-taktis" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-shield-halved w-6 text-center mr-2 text-amber-400"></i> SOP & Prosedur Taktis
+                        <i class="fa-solid fa-shield-halved w-6 text-center mr-2 text-amber-400"></i> SOP & Procedure
+                    </button>
+                    <button onclick="switchTab('rules')" id="nav-rules" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
+                        <i class="fa-solid fa-scale-balanced w-6 text-center mr-2 text-emerald-300"></i> Police & Code of Conduct
+                    </button>
+                    <button onclick="switchTab('radio')" id="nav-radio" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
+                        <i class="fa-solid fa-walkie-talkie w-6 text-center mr-2 text-emerald-400"></i> Communication & 10-Codes
                     </button>
                     <button onclick="switchTab('response')" id="nav-response" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-layer-group w-6 text-center mr-2 text-emerald-400"></i> Initial Response Procedure
@@ -173,32 +176,17 @@
                     <button onclick="switchTab('weapon')" id="nav-weapon" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-gun w-6 text-center mr-2 text-rose-400"></i> Weapon & Authority
                     </button>
-                    <button onclick="switchTab('ic')" id="nav-ic" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-sitemap w-6 text-center mr-2 text-blue-400"></i> Incident Command & Supervisi
-                    </button>
                     <button onclick="switchTab('fleet')" id="nav-fleet" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-car-side w-6 text-center mr-2 text-indigo-400"></i> Fleet, Kendaraan & Seragam
+                        <i class="fa-solid fa-car-side w-6 text-center mr-2 text-indigo-400"></i> Fleet & Uniform Authority
                     </button>
                     <button onclick="switchTab('investigasi')" id="nav-investigasi" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-magnifying-glass-chart w-6 text-center mr-2 text-cyan-400"></i> Investigasi & Internal
-                    </button>
-                    <button onclick="switchTab('rules')" id="nav-rules" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-scale-balanced w-6 text-center mr-2 text-emerald-300"></i> Policy & Code of Conduct
+                        <i class="fa-solid fa-magnifying-glass-chart w-6 text-center mr-2 text-cyan-400"></i> Investigation & Internal
                     </button>
                     <button onclick="switchTab('struktur')" id="nav-struktur" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-ranking-star w-6 text-center mr-2 text-yellow-300"></i> Pangkat & Organisasi
+                        <i class="fa-solid fa-ranking-star w-6 text-center mr-2 text-yellow-300"></i> Rank & Organization
                     </button>
                     <button onclick="switchTab('promosi')" id="nav-promosi" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-graduation-cap w-6 text-center mr-2 text-amber-400"></i> Promotion Requirement
-                    </button>
-                </nav>
-            </div>
-
-            <div>
-                <p class="px-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Dokumen & Rujukan</p>
-                <nav class="space-y-0.5">
-                    <button onclick="switchTab('kredit')" id="nav-kredit" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
-                        <i class="fa-solid fa-award w-6 text-center mr-2 text-purple-400"></i> Dokumen Kontrol & Kredit
                     </button>
                 </nav>
             </div>
@@ -236,7 +224,7 @@
                 </button>
                 <div class="flex items-center space-x-2">
                     <span id="header-icon" class="text-lssd-gold text-lg md:text-xl hidden sm:inline-block"><i class="fa-solid fa-house-chimney"></i></span>
-                    <h2 id="page-title" class="text-base sm:text-xl md:text-2xl font-black text-white tracking-wide truncate max-w-[200px] sm:max-w-md">Beranda & Gambaran</h2>
+                    <h2 id="page-title" class="text-base sm:text-xl md:text-2xl font-black text-white tracking-wide truncate max-w-[200px] sm:max-w-md">Home</h2>
                 </div>
             </div>
 
@@ -484,6 +472,596 @@
                     <p>&copy; 2026 Los Santos County Sheriff's Department &bull; Nusa V Roleplay</p>
                     <p class="font-mono text-[11px] text-lssd-tan">LSSD-DOC-SOP-00226 &bull; LSSD-MPP-2026-001</p>
                 </div>
+            </div>
+
+
+            <!-- 3. SOP & PROSEDUR TAKTIS PATROL OPERATIONS -->
+            <div id="page-taktis" class="page-content space-y-8">
+                
+                <!-- Section Header -->
+                <div class="bg-lssd-card border-l-4 border-amber-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">LSSD-DOC-SOP-00226 &bull; DIVISION: PATROL OPERATIONS</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Standar Operasional Patrol Operations & Prosedur Taktis</h2>
+                    <p class="text-xs text-slate-300 mt-1">
+                        Patrol Deputies merupakan garda terdepan penegakan hukum dan pelayanan masyarakat di seluruh wilayah Los Santos County. Bertindaklah berdasarkan hukum, profesionalisme, serta kepatuhan SOP yang terukur.
+                    </p>
+                </div>
+
+                <!-- 1. FUNGSI, TANGGUNG JAWAB & YURISDIKSI -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Tugas Dasar & Fungsi Khusus -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/010.00</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-lssd-gold"></i> Tugas Pokok & Fungsi Patroli
+                        </h3>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-white block mb-1 text-emerald-400">Tugas Pokok Kepolisian:</strong>
+                                <ul class="list-disc pl-4 space-y-1">
+                                    <li>Melindungi kehidupan dan keselamatan warga masyarakat.</li>
+                                    <li>Mencegah dan menekan terjadinya tindak kriminalitas.</li>
+                                    <li>Merespons panggilan darurat (Code 3) dan non-darurat secara cepat.</li>
+                                    <li>Melakukan penangkapan langsung berdasarkan probable cause.</li>
+                                    <li>Mengamankan lokasi kejadian perkara (TKP) & menjaga barang bukti.</li>
+                                    <li>Membuat dokumentasi laporan resmi secara objektif dan akurat.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-white block mb-1 text-amber-400">Fungsi Operasional Khusus:</strong>
+                                <div class="grid grid-cols-2 gap-1.5 mt-1 text-[11px]">
+                                    <span>&bull; Traffic Enforcement</span>
+                                    <span>&bull; Emergency Response</span>
+                                    <span>&bull; Criminal Suppression</span>
+                                    <span>&bull; High-Risk Calls</span>
+                                    <span>&bull; Search & Rescue (SAR)</span>
+                                    <span>&bull; Perimeter Security</span>
+                                    <span>&bull; Public Event Security</span>
+                                    <span>&bull; Backup Lintas Unit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yurisdiksi & Bantuan Antar Agency -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/020.00 & 2-06/030.35</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-map-location-dot text-blue-400"></i> Yurisdiksi & Operasi Antar Lembaga
+                        </h3>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-white block mb-1 text-blue-300">6 Dasar Tindakan Kepolisian:</strong>
+                                <ol class="list-decimal pl-4 space-y-0.5">
+                                    <li>Department Jurisdiction (Wilayah Resmi LSSD)</li>
+                                    <li>County Jurisdiction (Seluruh Los Santos County)</li>
+                                    <li>Mutual Aid Agreement (Perjanjian Bantuan Bersama)</li>
+                                    <li>Request for Assistance (Permintaan Bantuan Instansi Lain)</li>
+                                    <li>Emergency Circumstances (Kondisi Darurat Nyawa)</li>
+                                    <li>Hot Pursuit (Pengejaran Berkelanjutan terhadap Tersangka)</li>
+                                </ol>
+                            </div>
+
+                            <div class="bg-lssd-base p-3 rounded-lg border border-amber-500/30">
+                                <strong class="text-amber-400 block mb-1"><i class="fa-solid fa-handshake mr-1"></i> Memasuki Wilayah Agency Lain:</strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Ketika memasuki wilayah agency lain (seperti Kota Los Santos/LSPD), Deputies <b>wajib menghormati kewenangan lembaga setempat</b>, melakukan koordinasi radio secepat mungkin, dan mengikuti <b>Unified Command</b> yang telah ditentukan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. SCENE MANAGEMENT & EVIDENCE -->
+                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/030.05 &bull; FIRST RESPONDER</span>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-person-shelter text-emerald-400"></i> Scene Management & Evidence Handling
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+                        <!-- 9 Langkah First Responder -->
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <h4 class="text-sm font-bold text-emerald-400 mb-2 flex items-center gap-1.5">
+                                <i class="fa-solid fa-list-ol"></i> 9 Langkah First Responder di TKP:
+                            </h4>
+                            <ol class="list-decimal pl-5 space-y-1 text-slate-200">
+                                <li><b>Menilai kondisi lokasi:</b> Cek bahaya aktif di sekitar TKP.</li>
+                                <li><b>Keselamatan utama:</b> Pastikan keselamatan masyarakat & petugas.</li>
+                                <li><b>Kebutuhan backup:</b> Tentukan apakah perlu unit bantuan tambahan.</li>
+                                <li><b>Amankan lokasi:</b> Pasang garis polisi / batasi akses orang luar.</li>
+                                <li><b>Identifikasi subjek:</b> Catat korban, saksi, dan tersangka.</li>
+                                <li><b>Jaga barang bukti:</b> Lindungi bukti dari kerusakan atau cuaca.</li>
+                                <li><b>Investigasi awal:</b> Kumpulkan informasi krusial awal.</li>
+                                <li><b>Unit spesialis:</b> Hubungi SEB / Detective jika diperlukan.</li>
+                                <li><b>Serah terima resmi:</b> Serahkan penanganan ke investigator lanjutan jika diperlukan.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Chain of Custody & Arrest -->
+                        <div class="space-y-4">
+                            <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                                <h4 class="text-sm font-bold text-amber-400 mb-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-link"></i> Chain of Custody (Rantai Bukti):
+                                </h4>
+                                <p class="text-slate-300 leading-relaxed text-[11px]">
+                                    Deputies bertanggung jawab mengidentifikasi bukti, mencegah pemindahan tanpa izin, mendokumentasikan foto/posisi, melakukan penyitaan (seizure) sesuai aturan hukum, dan mencatat serah terima kepada unit berwenang demi keabsahan di pengadilan.
+                                </p>
+                            </div>
+
+                            <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                                <h4 class="text-sm font-bold text-blue-400 mb-1.5 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-handcuffs"></i> Prosedur Pasca Penangkapan (Arrest):
+                                </h4>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-300 text-[11px]">
+                                    <li>Lakukan penggeledahan badan (search) sesuai prosedur keselamatan.</li>
+                                    <li>Amankan dan catat seluruh barang bawaan tersangka.</li>
+                                    <li>Bacakan Miranda Warning sebelum interogasi resmi.</li>
+                                    <li>Bawa ke fasilitas detensi/stasiun untuk pemrosesan booking.</li>
+                                    <li>Susun Arrest Report secara lengkap dan akurat di MDT.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. TRAFFIC STOPS & PURSUIT POLICY -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Traffic Stop 7 Langkah -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest font-mono">BAB 2-06/030.10</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-car-on text-emerald-400"></i> Prosedur Standar Traffic Stop
+                        </h3>
+                        <div class="space-y-2 text-xs text-slate-200">
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">1</span>
+                                <span>Pastikan kendaraan berhenti di lokasi yang aman bagi pengendara dan petugas.</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">2</span>
+                                <span>Berikan instruksi yang jelas, tegas, dan sopan kepada pengemudi.</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">3</span>
+                                <span>Jelaskan alasan pemberhentian (traffic stop) ketika situasi aman memungkinkan.</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">4</span>
+                                <span>Periksa dokumen yang diperlukan (SIM/ID Card, STNK/Vehicle Registration).</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">5</span>
+                                <span>Lakukan pemeriksaan lanjutan bila terdapat probable cause atau indikasi kejahatan.</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">6</span>
+                                <span>Tentukan tindakan yang sesuai: Warning lisan/tertulis, Citation (tilang), atau Arrest.</span>
+                            </div>
+                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
+                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">7</span>
+                                <span>Dokumentasikan kejadian secara resmi di sistem MDT dan pastikan rekaman DICVS/BWV tersimpan.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pursuit Policy & Strict Limits -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-rose-400 font-bold uppercase tracking-widest font-mono">BAB 2-06/030.10 & SECTION 440</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-gauge-high text-rose-400"></i> Kebijakan Pengejaran Kendaraan (Pursuit)
+                        </h3>
+                        
+                        <!-- Larangan Tegas -->
+                        <div class="bg-rose-950/30 border border-rose-500/40 p-3 rounded-xl mb-4 text-xs">
+                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-triangle-exclamation"></i> LARANGAN KERAS PURSUIT:
+                            </strong>
+                            <p class="text-slate-200 text-[11px] leading-relaxed">
+                                Personel <b>dilarang keras memulai pursuit hanya berdasarkan pelanggaran lalu lintas kecil, pelanggaran ringan (infraction/misdemeanor), atau aksi sembrono (reckless driving) semata</b> tanpa indikasi kejahatan berat.
+                            </p>
+                        </div>
+
+                        <!-- 8 Faktor Pertimbangan Risiko -->
+                        <div class="bg-lssd-card p-3 rounded-xl border border-lssd-border text-xs mb-3">
+                            <strong class="text-lssd-gold block mb-1">8 Faktor Pertimbangan Memulai / Menghentikan Pursuit:</strong>
+                            <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-300">
+                                <span>1. Tingkat kejahatan suspect</span>
+                                <span>2. Kecepatan laju kendaraan</span>
+                                <span>3. Kondisi jalan & geometris</span>
+                                <span>4. Kepadatan lalu lintas & pejalan</span>
+                                <span>5. Risiko masyarakat & petugas</span>
+                                <span>6. Kondisi cuaca & jarak pandang</span>
+                                <span>7. Karakteristik area (pemukiman)</span>
+                                <span>8. Peluang tangkap di hari lain</span>
+                            </div>
+                        </div>
+
+                        <!-- Role Supervisor & Unmarked Units -->
+                        <div class="text-[11px] text-slate-300 space-y-1.5">
+                            <p><b>Unit Khusus / Sepeda Motor:</b> Unit unmarked dan motor patroli yang terlibat pursuit <b>wajib menyerahkan peran Primary Unit kepada marked patrol unit</b> sesaat setelah tiba di lokasi.</p>
+                            <p><b>Peran Supervisor:</b> Supervisor memegang kendali penuh koordinasi pursuit dan berwenang mutlak untuk <b>memerintahkan pengejaran dihentikan (Code 4 / Stand Down)</b> jika risiko melebihi nilai penangkapan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. USE OF FORCE CONTINUUM & SENJATA API -->
+                <div class="bg-lssd-dark rounded-2xl p-6 sm:p-8 border border-lssd-border">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 450 &bull; USE OF FORCE POLICY</span>
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-gun text-amber-400"></i> Kebijakan Penggunaan Kekuatan (Use of Force)
+                    </h3>
+                    <p class="text-xs text-slate-300 mb-6">
+                        Prinsip utama LSSD adalah <b>menjunjung tinggi dan menghargai nilai kehidupan manusia</b>. Personel wajib berupaya meredakan ketegangan dengan memanfaatkan waktu, jarak, komunikasi, dan taktik de-eskalasi sebelum meningkatkan eskalasi force.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs mb-6">
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <span class="px-2 py-0.5 rounded bg-emerald-900/40 text-emerald-300 font-bold text-[10px]">TAHAP 1</span>
+                            <h4 class="font-bold text-white mt-2 mb-1">De-Eskalasi & Verbal</h4>
+                            <p class="text-slate-300 text-[11px]">Wajib terapkan teknik komunikasi persuasif, jaga jarak aman, dan berikan peringatan verbal resmi bahwa force akan digunakan bila tidak patuh.</p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <span class="px-2 py-0.5 rounded bg-blue-900/40 text-blue-300 font-bold text-[10px]">TAHAP 2</span>
+                            <h4 class="font-bold text-white mt-2 mb-1">Less-Lethal Options</h4>
+                            <p class="text-slate-300 text-[11px]">Baton, TASER (wajib di duty belt seragam), beanbag shotgun, 40mm launcher, dan semprotan kimia (OC Spray) untuk mengatasi perlawanan fisik aktif.</p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <span class="px-2 py-0.5 rounded bg-amber-900/40 text-amber-300 font-bold text-[10px]">TAHAP 3</span>
+                            <h4 class="font-bold text-white mt-2 mb-1">Non-Deadly Force</h4>
+                            <p class="text-slate-300 text-[11px]">Digunakan untuk membela diri/orang lain dari ancaman bahaya fisik, melaksanakan penahanan resmi, atau menghentikan upaya pelarian aktif.</p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
+                            <span class="px-2 py-0.5 rounded bg-rose-600 text-white font-bold text-[10px]">TAHAP 4</span>
+                            <h4 class="font-bold text-white mt-2 mb-1">Deadly Force</h4>
+                            <p class="text-slate-300 text-[11px]">HANYA boleh digunakan saat ada ancaman kematian langsung (imminent danger of death) atau luka fisik serius terhadap petugas maupun masyarakat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ketentuan Khusus & Larangan Senjata Api -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-500/40">
+                            <strong class="text-rose-400 block mb-1 font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-ban"></i> Tembakan Peringatan:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Sworn Personnel <b>dilarang keras melepaskan tembakan peringatan ke udara atau arah mana pun dalam kondisi apa pun!</b>
+                            </p>
+                        </div>
+
+                        <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-500/40">
+                            <strong class="text-rose-400 block mb-1 font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-car-burst"></i> Menembak ke / dari Kendaraan:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Dilarang keras menembak ke kendaraan bergerak kecuali pelaku menembak balik. Kendaraan melaju bukan pembenaran deadly force; <b>utamakan manuver menghindar!</b>
+                            </p>
+                        </div>
+
+                        <div class="bg-emerald-950/20 p-4 rounded-xl border border-emerald-500/40">
+                            <strong class="text-emerald-400 block mb-1 font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-kit-medical"></i> Pertolongan Medis Pasca Force:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Pasca penembakan/use of force, petugas <b>wajib segera memanggil unit ambulans (EMS/10-52)</b> dan memberikan pertolongan pertama (First Aid) kepada siapa pun yang terluka.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. SITUASI TAKTIS KHUSUS: HOSTAGE, BARRICADE, FLASHLIGHT, K-9, TACTICAL ALERT -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Sandera & Barricaded Suspects -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 460 - 462.10</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-person-burst text-rose-400"></i> Situasi Sandera & Barikade
+                        </h3>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-rose-400 block mb-1">Hostages (Situasi Sandera):</strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Pertahankan sandera di bawah perlindungan petugas dan cegah tersangka memindahkan sandera dari TKP. Dalam exigent circumstances, pembiaran pemindahan sandera hanya dipertimbangkan bila penahanan langsung mengancam keselamatan yang lebih besar.
+                                </p>
+                            </div>
+
+                            <div class="bg-lssd-card p-3 rounded-lg border border-rose-500/30">
+                                <strong class="text-rose-400 block mb-1 flex items-center gap-1">
+                                    <i class="fa-solid fa-hand"></i> Dilarang Menyerahkan Senjata (Service Weapon):
+                                </strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Petugas <b>sangat dilarang menyerahkan service weapon</b> kepada pelaku bersenjata dalam situasi konfrontatif apa pun karena secara taktis tidak meredakan ancaman.
+                                </p>
+                            </div>
+
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-amber-400 block mb-1">Barricaded Suspects (Tersangka Berbarikade):</strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Bangun perimeter containment segera, isolasi posisi pelaku, minta backup unit khusus (SEB), dan <b>utamakan negosiasi</b> penyerahan diri secara sukarela sebelum menggunakan force.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Peralatan Khusus & Tactical Alert -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 470 - 480</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-dog text-amber-400"></i> K-9, Flashlight & Tactical Alert
+                        </h3>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-amber-400 block mb-1">Sheriff Dogs (K-9 Unit - Section 471):</strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Digunakan untuk pelacakan tersangka kriminal yang bersembunyi/melarikan diri, deteksi narkotika/bahan peledak, dan pelaksanaan Search and Rescue (SAR) orang hilang di kawasan county.
+                                </p>
+                            </div>
+
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <strong class="text-blue-400 block mb-1">Flashlight Usage (Section 470):</strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Senter dinas dirancang sebagai alat penerangan visual, <b>bukan impact weapon</b>. Penggunaan sebagai senjata pukulan darurat hanya dibenarkan jika baton secara teknis tidak memungkinkan digunakan.
+                                </p>
+                            </div>
+
+                            <div class="bg-lssd-base p-3 rounded-lg border border-rose-500/40">
+                                <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-bell"></i> Citywide Tactical Alert (Section 480):
+                                </strong>
+                                <p class="text-[11px] leading-relaxed">
+                                    Deklarasi resmi alokasi ulang personel secara masif saat krisis besar/civil unrest. Ketentuan: <b>tunda tindakan hukum pelanggaran minor (dilarang pursuit minor)</b>, tolak panggilan pelayanan kecil (parkir, alarm), dan siagakan unit untuk panggilan darurat utama.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. SHIFT OPERATIONS & PERFORMANCE STANDARD -->
+                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/060.00 & 2-06/070.00</span>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left text-blue-400"></i> Alur Shift Patroli & Standar Penilaian Kinerja
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs mb-6">
+                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
+                            <span class="text-lssd-gold font-bold block mb-1">1. Roll Call / Briefing</span>
+                            <p class="text-slate-300 text-[11px]">Pengecekan personel, seragam, duty gear, kendaraan, serta briefing kondisi wilayah, wanted persons, dan BOLO aktif.</p>
+                        </div>
+                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
+                            <span class="text-emerald-400 font-bold block mb-1">2. Patrol Deployment</span>
+                            <p class="text-slate-300 text-[11px]">Penempatan unit sesuai wilayah (Sandy Shores / Blaine County), patroli aktif dengan tujuan utama <i>crime prevention</i>.</p>
+                        </div>
+                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
+                            <span class="text-blue-400 font-bold block mb-1">3. Calls for Service</span>
+                            <p class="text-slate-300 text-[11px]">Merespons panggilan darurat, menangani insiden lapangan, investigasi awal, serta penyusunan laporan perkara.</p>
+                        </div>
+                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
+                            <span class="text-purple-400 font-bold block mb-1">4. End-of-Shift</span>
+                            <p class="text-slate-300 text-[11px]">Menyelesaikan laporan MDT, mengembalikan perlengkapan dinas, inspeksi kendaraan, serah terima shift baru, dan debrief.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-lssd-card p-4 rounded-xl border-l-4 border-lssd-gold flex items-center gap-3 text-xs">
+                        <i class="fa-solid fa-award text-lssd-gold text-2xl flex-shrink-0"></i>
+                        <p class="text-slate-200 leading-relaxed">
+                            <b>Filosofi Kinerja (Section 2-06/070.00):</b> <i>"Quantity of enforcement actions shall not be used as the sole measurement of Deputy performance."</i> Keberhasilan dinilai dari kualitas pelayanan warga, keselamatan operasional, kepatuhan SOP, radio discipline, teamwork, serta kemampuan menyelesaikan konflik secara damai.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 7. POLICY & CODE OF CONDUCT -->
+            <div id="page-rules" class="page-content space-y-8">
+                
+                <!-- Section Header -->
+                <div class="bg-lssd-card border-l-4 border-cyan-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
+                    <span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest font-mono">VOLUME 1 &bull; POLICY & PERSONAL CONDUCT</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Kode Etik Penegak Hukum & Regulasi Disiplin</h2>
+                    <p class="text-xs text-slate-300 mt-1">
+                        Integritas dan kehormatan lencana Los Santos County Sheriff's Department dibangun dari kepatuhan mutlak terhadap etika, profesionalisme, serta perlakuan yang adil terhadap seluruh masyarakat.
+                    </p>
+                </div>
+
+                <!-- 1. LAW ENFORCEMENT CODE OF ETHICS -->
+                <div class="bg-gradient-to-r from-lssd-dark via-lssd-card to-lssd-dark rounded-2xl p-6 sm:p-8 border border-lssd-border shadow-xl">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 200 &bull; STANDARD OF CONDUCT</span>
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-scroll text-lssd-gold"></i> The Law Enforcement Code of Ethics
+                            </h3>
+                        </div>
+                        <i class="fa-solid fa-scale-balanced text-2xl text-lssd-gold hidden sm:block"></i>
+                    </div>
+
+                    <div class="space-y-4 text-xs text-slate-200 leading-relaxed font-sans italic bg-lssd-base/80 p-5 rounded-xl border border-lssd-border">
+                        <p>
+                            "As a law enforcement Deputy, my fundamental duty is to serve mankind—to safeguard lives and property, to protect the innocent against deception, the weak against oppression or intimidation, and the peaceful against violence or disorder, and to respect the Constitutional rights of all men to liberty, equality, and justice."
+                        </p>
+                        <p>
+                            "I will keep my private life unsullied as an example to all; maintain courageous calm in the face of danger, scorn, or ridicule; develop self-restraint; and be constantly mindful of the welfare of others. Honest in thought and deed in both my personal and official life, I will be exemplary in obeying the laws of the land and the regulations of my department. Whatever I see or hear of a confidential nature will be kept ever secret unless revelation is necessary in the performance of duty."
+                        </p>
+                        <p>
+                            "I will never act officiously or permit personal feelings, prejudices, animosities, or friendships to influence my decisions. With no compromise for crime and with relentless prosecution of criminals, I will enforce the law courteously and appropriately without fear or favor, malice or ill will, never employing unnecessary force or violence and never accepting gratuities."
+                        </p>
+                        <p class="not-italic text-lssd-gold font-semibold pt-2 border-t border-lssd-border text-right">
+                            &mdash; Sumpah Jabatan Sworn Personnel LSSD
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. GENERAL POLICY & ZERO-TOLERANCE RULES -->
+                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 210 &bull; ATURAN DISIPLIN UMUM</span>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-gavel text-amber-400"></i> Ketentuan Disiplin & Larangan Mutlak
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
+                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-ban"></i> Larangan Geng Kepolisian:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Personel <b>dilarang keras berpartisipasi dalam law enforcement gang</b> atau klik tertutup ilegal dalam tubuh kepolisian. Pelanggaran berakibat <b>pemecatan seketika</b>.
+                            </p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
+                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-person-walking-arrow-right"></i> Larangan Mogok Kerja:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Sworn Personnel <b>tidak memiliki hak untuk mogok kerja atau memperlambat pekerjaan (work slowdown)</b>. Penegakan hukum dan perlindungan masyarakat wajib berlangsung tanpa henti.
+                            </p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <strong class="text-emerald-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-hands-holding-child"></i> Pemolisian Bebas Bias:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Dilarang segala bentuk diskriminasi berdasarkan ras, agama, warna kulit, etnis, usia, jenis kelamin, identitas gender, status imigrasi, pekerjaan, atau tunawisma.
+                            </p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <strong class="text-amber-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-martini-glass-citrus"></i> Alkohol & Zat Terlarang:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Dilarang mengonsumsi minuman beralkohol hingga mempengaruhi kinerja saat dinas, dan dilarang mengonsumsi alkohol di seluruh fasilitas/gedung/parkiran departemen.
+                            </p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <strong class="text-blue-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-smoking"></i> Larangan Merokok:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Dilarang merokok di tempat kerja tertutup, gedung sewa kota, kendaraan dinas, serta dilarang membawa/merokok saat berinteraksi dengan masyarakat atau di tempat bisnis.
+                            </p>
+                        </div>
+
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <strong class="text-purple-400 block mb-1 flex items-center gap-1.5">
+                                <i class="fa-solid fa-flag"></i> Kewajiban Melapor Pelanggaran:
+                            </strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Personel yang mengetahui pelanggaran oleh personel lain <b>wajib segera melaporkannya ke supervisor atau Internal Affairs Division (LSSD IA)</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. PRETEXTUAL STOPS & MEDIA RELATIONS -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-xs">
+                    
+                    <!-- Pretextual Stops -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-rose-400 font-bold uppercase tracking-widest font-mono">SECTION 220 &bull; PRETEXTUAL STOPS</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-traffic-light text-rose-400"></i> Larangan Pemeriksaan Pretekstual
+                        </h3>
+                        <div class="space-y-3 text-slate-300">
+                            <p class="text-[11px] leading-relaxed">
+                                Pemeriksaan pretekstual terjadi saat petugas memanfaatkan kecurigaan atau bukti atas pelanggaran lalu lintas ringan semata sebagai dalih untuk menggeledah dugaan kejahatan serius yang tidak berkaitan langsung.
+                            </p>
+                            <div class="bg-rose-950/30 p-3 rounded-lg border border-rose-500/30">
+                                <b class="text-rose-300 block mb-1">Kebijakan Departemen Secara Tegas Melarang Pretextual Stops:</b>
+                                <span class="text-[11px] text-slate-200">
+                                    Kecuali jika didasarkan informasi tambahan yang dapat dipertanggungjawabkan secara objektif terkait kejahatan serius: kekerasan, DUI, ugal-ugalan berbahaya, tabrak lari, perdagangan orang/narkotika, kejahatan senjata api, atau perampokan.
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-lssd-tan">
+                                <b>Catatan Wajib:</b> Dasar pertimbangan pemeriksaan pretekstual wajib dijelaskan dan terekam secara jelas di Kamera Badan (Body-Worn Video).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- News Media Relations -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest font-mono">SECTION 300 &bull; COMMUNITY AFFAIRS</span>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-newspaper text-blue-400"></i> Hubungan Media Berita & Kebebasan Pers
+                        </h3>
+                        <div class="space-y-3 text-slate-300 text-[11px]">
+                            <p class="leading-relaxed">
+                                LSSD menjalin kerja sama profesional dengan media berita agar informasi publik tersampaikan secara transparan tanpa mengganggu proses investigasi dan peradilan.
+                            </p>
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <b class="text-white block mb-1">Akses Area Insiden:</b>
+                                Reporter berita dapat berada di area sekitar insiden jika memiliki <i>media news pass</i> resmi, namun <b>tidak berwenang masuk ke area yang telah dipasangi garis steril (crime scene)</b> untuk menjaga keutuhan barang bukti.
+                            </div>
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <b class="text-white block mb-1">Hak Dokumentasi:</b>
+                                Reporter berhak memotret atau melaporkan apa yang mereka amati dari tempat yang sah. Petugas dilarang merampas kamera atau mengintimidasi media selama dalam batas hukum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. PATROL CONDUCT CHECKLIST (10 ATURAN PERILAKU) -->
+                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/050.00 &bull; 10 STANDAR PERILAKU PATROLI</span>
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-lssd-gold"></i> 10 Kewajiban Standar Perilaku Patrol Deputies
+                    </h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">1</span>
+                            <span class="text-slate-200">Mematuhi Chain of Command (Rantai Komando).</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">2</span>
+                            <span class="text-slate-200">Mematuhi seluruh Department SOP dan Manual.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">3</span>
+                            <span class="text-slate-200">Menjaga disiplin komunikasi radio (radio discipline).</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">4</span>
+                            <span class="text-slate-200">Menggunakan kendaraan dinas secara bertanggung jawab.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">5</span>
+                            <span class="text-slate-200">Menggunakan kekuatan (force) secara proporsional.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">6</span>
+                            <span class="text-slate-200">Menjaga etika & profesionalisme terhadap masyarakat.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">7</span>
+                            <span class="text-slate-200">Menghormati wewenang agency / kepolisian lain.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">8</span>
+                            <span class="text-slate-200">Menjaga keaslian & integritas laporan perkara.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">9</span>
+                            <span class="text-slate-200">Tidak menyalahgunakan kewenangan hukum jabatan.</span>
+                        </div>
+                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
+                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">10</span>
+                            <span class="text-slate-200">Mengutamakan keselamatan dan ketertiban publik.</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
@@ -933,391 +1511,6 @@
                     <div class="mt-4 pt-4 border-t border-lssd-border text-xs text-slate-400 flex items-center gap-2">
                         <i class="fa-solid fa-circle-info text-lssd-gold"></i>
                         <span><b>Section 104.4:</b> Dilarang menggunakan paksaan, ancaman, atau intimidasi untuk mempengaruhi pemahaman tersangka. Jika tersangka menyatakan tidak paham, berikan klarifikasi objektif sebelum melanjutkan proses verbal.</span>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- 3. SOP & PROSEDUR TAKTIS PATROL OPERATIONS -->
-            <div id="page-taktis" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-amber-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">LSSD-DOC-SOP-00226 &bull; DIVISION: PATROL OPERATIONS</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Standar Operasional Patrol Operations & Prosedur Taktis</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Patrol Deputies merupakan garda terdepan penegakan hukum dan pelayanan masyarakat di seluruh wilayah Los Santos County. Bertindaklah berdasarkan hukum, profesionalisme, serta kepatuhan SOP yang terukur.
-                    </p>
-                </div>
-
-                <!-- 1. FUNGSI, TANGGUNG JAWAB & YURISDIKSI -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    
-                    <!-- Tugas Dasar & Fungsi Khusus -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/010.00</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-list-check text-lssd-gold"></i> Tugas Pokok & Fungsi Patroli
-                        </h3>
-                        <div class="space-y-3 text-xs text-slate-300">
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-white block mb-1 text-emerald-400">Tugas Pokok Kepolisian:</strong>
-                                <ul class="list-disc pl-4 space-y-1">
-                                    <li>Melindungi kehidupan dan keselamatan warga masyarakat.</li>
-                                    <li>Mencegah dan menekan terjadinya tindak kriminalitas.</li>
-                                    <li>Merespons panggilan darurat (Code 3) dan non-darurat secara cepat.</li>
-                                    <li>Melakukan penangkapan langsung berdasarkan probable cause.</li>
-                                    <li>Mengamankan lokasi kejadian perkara (TKP) & menjaga barang bukti.</li>
-                                    <li>Membuat dokumentasi laporan resmi secara objektif dan akurat.</li>
-                                </ul>
-                            </div>
-
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-white block mb-1 text-amber-400">Fungsi Operasional Khusus:</strong>
-                                <div class="grid grid-cols-2 gap-1.5 mt-1 text-[11px]">
-                                    <span>&bull; Traffic Enforcement</span>
-                                    <span>&bull; Emergency Response</span>
-                                    <span>&bull; Criminal Suppression</span>
-                                    <span>&bull; High-Risk Calls</span>
-                                    <span>&bull; Search & Rescue (SAR)</span>
-                                    <span>&bull; Perimeter Security</span>
-                                    <span>&bull; Public Event Security</span>
-                                    <span>&bull; Backup Lintas Unit</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Yurisdiksi & Bantuan Antar Agency -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/020.00 & 2-06/030.35</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-map-location-dot text-blue-400"></i> Yurisdiksi & Operasi Antar Lembaga
-                        </h3>
-                        <div class="space-y-3 text-xs text-slate-300">
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-white block mb-1 text-blue-300">6 Dasar Tindakan Kepolisian:</strong>
-                                <ol class="list-decimal pl-4 space-y-0.5">
-                                    <li>Department Jurisdiction (Wilayah Resmi LSSD)</li>
-                                    <li>County Jurisdiction (Seluruh Los Santos County)</li>
-                                    <li>Mutual Aid Agreement (Perjanjian Bantuan Bersama)</li>
-                                    <li>Request for Assistance (Permintaan Bantuan Instansi Lain)</li>
-                                    <li>Emergency Circumstances (Kondisi Darurat Nyawa)</li>
-                                    <li>Hot Pursuit (Pengejaran Berkelanjutan terhadap Tersangka)</li>
-                                </ol>
-                            </div>
-
-                            <div class="bg-lssd-base p-3 rounded-lg border border-amber-500/30">
-                                <strong class="text-amber-400 block mb-1"><i class="fa-solid fa-handshake mr-1"></i> Memasuki Wilayah Agency Lain:</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Ketika memasuki wilayah agency lain (seperti Kota Los Santos/LSPD), Deputies <b>wajib menghormati kewenangan lembaga setempat</b>, melakukan koordinasi radio secepat mungkin, dan mengikuti <b>Unified Command</b> yang telah ditentukan.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. SCENE MANAGEMENT & EVIDENCE -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/030.05 &bull; FIRST RESPONDER</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-person-shelter text-emerald-400"></i> Scene Management & Evidence Handling
-                    </h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-                        <!-- 9 Langkah First Responder -->
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <h4 class="text-sm font-bold text-emerald-400 mb-2 flex items-center gap-1.5">
-                                <i class="fa-solid fa-list-ol"></i> 9 Langkah First Responder di TKP:
-                            </h4>
-                            <ol class="list-decimal pl-5 space-y-1 text-slate-200">
-                                <li><b>Menilai kondisi lokasi:</b> Cek bahaya aktif di sekitar TKP.</li>
-                                <li><b>Keselamatan utama:</b> Pastikan keselamatan masyarakat & petugas.</li>
-                                <li><b>Kebutuhan backup:</b> Tentukan apakah perlu unit bantuan tambahan.</li>
-                                <li><b>Amankan lokasi:</b> Pasang garis polisi / batasi akses orang luar.</li>
-                                <li><b>Identifikasi subjek:</b> Catat korban, saksi, dan tersangka.</li>
-                                <li><b>Jaga barang bukti:</b> Lindungi bukti dari kerusakan atau cuaca.</li>
-                                <li><b>Investigasi awal:</b> Kumpulkan informasi krusial awal.</li>
-                                <li><b>Unit spesialis:</b> Hubungi SEB / Detective jika diperlukan.</li>
-                                <li><b>Serah terima resmi:</b> Serahkan penanganan ke investigator lanjutan jika diperlukan.</li>
-                            </ol>
-                        </div>
-
-                        <!-- Chain of Custody & Arrest -->
-                        <div class="space-y-4">
-                            <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                                <h4 class="text-sm font-bold text-amber-400 mb-1.5 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-link"></i> Chain of Custody (Rantai Bukti):
-                                </h4>
-                                <p class="text-slate-300 leading-relaxed text-[11px]">
-                                    Deputies bertanggung jawab mengidentifikasi bukti, mencegah pemindahan tanpa izin, mendokumentasikan foto/posisi, melakukan penyitaan (seizure) sesuai aturan hukum, dan mencatat serah terima kepada unit berwenang demi keabsahan di pengadilan.
-                                </p>
-                            </div>
-
-                            <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                                <h4 class="text-sm font-bold text-blue-400 mb-1.5 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-handcuffs"></i> Prosedur Pasca Penangkapan (Arrest):
-                                </h4>
-                                <ul class="list-disc pl-4 space-y-1 text-slate-300 text-[11px]">
-                                    <li>Lakukan penggeledahan badan (search) sesuai prosedur keselamatan.</li>
-                                    <li>Amankan dan catat seluruh barang bawaan tersangka.</li>
-                                    <li>Bacakan Miranda Warning sebelum interogasi resmi.</li>
-                                    <li>Bawa ke fasilitas detensi/stasiun untuk pemrosesan booking.</li>
-                                    <li>Susun Arrest Report secara lengkap dan akurat di MDT.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. TRAFFIC STOPS & PURSUIT POLICY -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    
-                    <!-- Traffic Stop 7 Langkah -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest font-mono">BAB 2-06/030.10</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-car-on text-emerald-400"></i> Prosedur Standar Traffic Stop
-                        </h3>
-                        <div class="space-y-2 text-xs text-slate-200">
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">1</span>
-                                <span>Pastikan kendaraan berhenti di lokasi yang aman bagi pengendara dan petugas.</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">2</span>
-                                <span>Berikan instruksi yang jelas, tegas, dan sopan kepada pengemudi.</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">3</span>
-                                <span>Jelaskan alasan pemberhentian (traffic stop) ketika situasi aman memungkinkan.</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">4</span>
-                                <span>Periksa dokumen yang diperlukan (SIM/ID Card, STNK/Vehicle Registration).</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">5</span>
-                                <span>Lakukan pemeriksaan lanjutan bila terdapat probable cause atau indikasi kejahatan.</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">6</span>
-                                <span>Tentukan tindakan yang sesuai: Warning lisan/tertulis, Citation (tilang), atau Arrest.</span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 mt-0.5">7</span>
-                                <span>Dokumentasikan kejadian secara resmi di sistem MDT dan pastikan rekaman DICVS/BWV tersimpan.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pursuit Policy & Strict Limits -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-rose-400 font-bold uppercase tracking-widest font-mono">BAB 2-06/030.10 & SECTION 440</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-gauge-high text-rose-400"></i> Kebijakan Pengejaran Kendaraan (Pursuit)
-                        </h3>
-                        
-                        <!-- Larangan Tegas -->
-                        <div class="bg-rose-950/30 border border-rose-500/40 p-3 rounded-xl mb-4 text-xs">
-                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-triangle-exclamation"></i> LARANGAN KERAS PURSUIT:
-                            </strong>
-                            <p class="text-slate-200 text-[11px] leading-relaxed">
-                                Personel <b>dilarang keras memulai pursuit hanya berdasarkan pelanggaran lalu lintas kecil, pelanggaran ringan (infraction/misdemeanor), atau aksi sembrono (reckless driving) semata</b> tanpa indikasi kejahatan berat.
-                            </p>
-                        </div>
-
-                        <!-- 8 Faktor Pertimbangan Risiko -->
-                        <div class="bg-lssd-card p-3 rounded-xl border border-lssd-border text-xs mb-3">
-                            <strong class="text-lssd-gold block mb-1">8 Faktor Pertimbangan Memulai / Menghentikan Pursuit:</strong>
-                            <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-300">
-                                <span>1. Tingkat kejahatan suspect</span>
-                                <span>2. Kecepatan laju kendaraan</span>
-                                <span>3. Kondisi jalan & geometris</span>
-                                <span>4. Kepadatan lalu lintas & pejalan</span>
-                                <span>5. Risiko masyarakat & petugas</span>
-                                <span>6. Kondisi cuaca & jarak pandang</span>
-                                <span>7. Karakteristik area (pemukiman)</span>
-                                <span>8. Peluang tangkap di hari lain</span>
-                            </div>
-                        </div>
-
-                        <!-- Role Supervisor & Unmarked Units -->
-                        <div class="text-[11px] text-slate-300 space-y-1.5">
-                            <p><b>Unit Khusus / Sepeda Motor:</b> Unit unmarked dan motor patroli yang terlibat pursuit <b>wajib menyerahkan peran Primary Unit kepada marked patrol unit</b> sesaat setelah tiba di lokasi.</p>
-                            <p><b>Peran Supervisor:</b> Supervisor memegang kendali penuh koordinasi pursuit dan berwenang mutlak untuk <b>memerintahkan pengejaran dihentikan (Code 4 / Stand Down)</b> jika risiko melebihi nilai penangkapan.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. USE OF FORCE CONTINUUM & SENJATA API -->
-                <div class="bg-lssd-dark rounded-2xl p-6 sm:p-8 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 450 &bull; USE OF FORCE POLICY</span>
-                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-gun text-amber-400"></i> Kebijakan Penggunaan Kekuatan (Use of Force)
-                    </h3>
-                    <p class="text-xs text-slate-300 mb-6">
-                        Prinsip utama LSSD adalah <b>menjunjung tinggi dan menghargai nilai kehidupan manusia</b>. Personel wajib berupaya meredakan ketegangan dengan memanfaatkan waktu, jarak, komunikasi, dan taktik de-eskalasi sebelum meningkatkan eskalasi force.
-                    </p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs mb-6">
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-emerald-900/40 text-emerald-300 font-bold text-[10px]">TAHAP 1</span>
-                            <h4 class="font-bold text-white mt-2 mb-1">De-Eskalasi & Verbal</h4>
-                            <p class="text-slate-300 text-[11px]">Wajib terapkan teknik komunikasi persuasif, jaga jarak aman, dan berikan peringatan verbal resmi bahwa force akan digunakan bila tidak patuh.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-blue-900/40 text-blue-300 font-bold text-[10px]">TAHAP 2</span>
-                            <h4 class="font-bold text-white mt-2 mb-1">Less-Lethal Options</h4>
-                            <p class="text-slate-300 text-[11px]">Baton, TASER (wajib di duty belt seragam), beanbag shotgun, 40mm launcher, dan semprotan kimia (OC Spray) untuk mengatasi perlawanan fisik aktif.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-amber-900/40 text-amber-300 font-bold text-[10px]">TAHAP 3</span>
-                            <h4 class="font-bold text-white mt-2 mb-1">Non-Deadly Force</h4>
-                            <p class="text-slate-300 text-[11px]">Digunakan untuk membela diri/orang lain dari ancaman bahaya fisik, melaksanakan penahanan resmi, atau menghentikan upaya pelarian aktif.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
-                            <span class="px-2 py-0.5 rounded bg-rose-600 text-white font-bold text-[10px]">TAHAP 4</span>
-                            <h4 class="font-bold text-white mt-2 mb-1">Deadly Force</h4>
-                            <p class="text-slate-300 text-[11px]">HANYA boleh digunakan saat ada ancaman kematian langsung (imminent danger of death) atau luka fisik serius terhadap petugas maupun masyarakat.</p>
-                        </div>
-                    </div>
-
-                    <!-- Ketentuan Khusus & Larangan Senjata Api -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                        <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-500/40">
-                            <strong class="text-rose-400 block mb-1 font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-ban"></i> Tembakan Peringatan:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Sworn Personnel <b>dilarang keras melepaskan tembakan peringatan ke udara atau arah mana pun dalam kondisi apa pun!</b>
-                            </p>
-                        </div>
-
-                        <div class="bg-rose-950/20 p-4 rounded-xl border border-rose-500/40">
-                            <strong class="text-rose-400 block mb-1 font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-car-burst"></i> Menembak ke / dari Kendaraan:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Dilarang keras menembak ke kendaraan bergerak kecuali pelaku menembak balik. Kendaraan melaju bukan pembenaran deadly force; <b>utamakan manuver menghindar!</b>
-                            </p>
-                        </div>
-
-                        <div class="bg-emerald-950/20 p-4 rounded-xl border border-emerald-500/40">
-                            <strong class="text-emerald-400 block mb-1 font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-kit-medical"></i> Pertolongan Medis Pasca Force:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Pasca penembakan/use of force, petugas <b>wajib segera memanggil unit ambulans (EMS/10-52)</b> dan memberikan pertolongan pertama (First Aid) kepada siapa pun yang terluka.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5. SITUASI TAKTIS KHUSUS: HOSTAGE, BARRICADE, FLASHLIGHT, K-9, TACTICAL ALERT -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    
-                    <!-- Sandera & Barricaded Suspects -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 460 - 462.10</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-person-burst text-rose-400"></i> Situasi Sandera & Barikade
-                        </h3>
-                        <div class="space-y-3 text-xs text-slate-300">
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-rose-400 block mb-1">Hostages (Situasi Sandera):</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Pertahankan sandera di bawah perlindungan petugas dan cegah tersangka memindahkan sandera dari TKP. Dalam exigent circumstances, pembiaran pemindahan sandera hanya dipertimbangkan bila penahanan langsung mengancam keselamatan yang lebih besar.
-                                </p>
-                            </div>
-
-                            <div class="bg-lssd-card p-3 rounded-lg border border-rose-500/30">
-                                <strong class="text-rose-400 block mb-1 flex items-center gap-1">
-                                    <i class="fa-solid fa-hand"></i> Dilarang Menyerahkan Senjata (Service Weapon):
-                                </strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Petugas <b>sangat dilarang menyerahkan service weapon</b> kepada pelaku bersenjata dalam situasi konfrontatif apa pun karena secara taktis tidak meredakan ancaman.
-                                </p>
-                            </div>
-
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-amber-400 block mb-1">Barricaded Suspects (Tersangka Berbarikade):</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Bangun perimeter containment segera, isolasi posisi pelaku, minta backup unit khusus (SEB), dan <b>utamakan negosiasi</b> penyerahan diri secara sukarela sebelum menggunakan force.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Peralatan Khusus & Tactical Alert -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 470 - 480</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-dog text-amber-400"></i> K-9, Flashlight & Tactical Alert
-                        </h3>
-                        <div class="space-y-3 text-xs text-slate-300">
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-amber-400 block mb-1">Sheriff Dogs (K-9 Unit - Section 471):</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Digunakan untuk pelacakan tersangka kriminal yang bersembunyi/melarikan diri, deteksi narkotika/bahan peledak, dan pelaksanaan Search and Rescue (SAR) orang hilang di kawasan county.
-                                </p>
-                            </div>
-
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <strong class="text-blue-400 block mb-1">Flashlight Usage (Section 470):</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Senter dinas dirancang sebagai alat penerangan visual, <b>bukan impact weapon</b>. Penggunaan sebagai senjata pukulan darurat hanya dibenarkan jika baton secara teknis tidak memungkinkan digunakan.
-                                </p>
-                            </div>
-
-                            <div class="bg-lssd-base p-3 rounded-lg border border-rose-500/40">
-                                <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-bell"></i> Citywide Tactical Alert (Section 480):
-                                </strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Deklarasi resmi alokasi ulang personel secara masif saat krisis besar/civil unrest. Ketentuan: <b>tunda tindakan hukum pelanggaran minor (dilarang pursuit minor)</b>, tolak panggilan pelayanan kecil (parkir, alarm), dan siagakan unit untuk panggilan darurat utama.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6. SHIFT OPERATIONS & PERFORMANCE STANDARD -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/060.00 & 2-06/070.00</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-clock-rotate-left text-blue-400"></i> Alur Shift Patroli & Standar Penilaian Kinerja
-                    </h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs mb-6">
-                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
-                            <span class="text-lssd-gold font-bold block mb-1">1. Roll Call / Briefing</span>
-                            <p class="text-slate-300 text-[11px]">Pengecekan personel, seragam, duty gear, kendaraan, serta briefing kondisi wilayah, wanted persons, dan BOLO aktif.</p>
-                        </div>
-                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
-                            <span class="text-emerald-400 font-bold block mb-1">2. Patrol Deployment</span>
-                            <p class="text-slate-300 text-[11px]">Penempatan unit sesuai wilayah (Sandy Shores / Blaine County), patroli aktif dengan tujuan utama <i>crime prevention</i>.</p>
-                        </div>
-                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
-                            <span class="text-blue-400 font-bold block mb-1">3. Calls for Service</span>
-                            <p class="text-slate-300 text-[11px]">Merespons panggilan darurat, menangani insiden lapangan, investigasi awal, serta penyusunan laporan perkara.</p>
-                        </div>
-                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border">
-                            <span class="text-purple-400 font-bold block mb-1">4. End-of-Shift</span>
-                            <p class="text-slate-300 text-[11px]">Menyelesaikan laporan MDT, mengembalikan perlengkapan dinas, inspeksi kendaraan, serah terima shift baru, dan debrief.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-lssd-card p-4 rounded-xl border-l-4 border-lssd-gold flex items-center gap-3 text-xs">
-                        <i class="fa-solid fa-award text-lssd-gold text-2xl flex-shrink-0"></i>
-                        <p class="text-slate-200 leading-relaxed">
-                            <b>Filosofi Kinerja (Section 2-06/070.00):</b> <i>"Quantity of enforcement actions shall not be used as the sole measurement of Deputy performance."</i> Keberhasilan dinilai dari kualitas pelayanan warga, keselamatan operasional, kepatuhan SOP, radio discipline, teamwork, serta kemampuan menyelesaikan konflik secara damai.
-                        </p>
                     </div>
                 </div>
 
@@ -2282,166 +2475,6 @@
             </div>
 
 
-            <!-- 4. INCIDENT COMMAND & SUPERVISI -->
-            <div id="page-ic" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-blue-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest font-mono">VOLUME 3 &bull; SUPERVISION & COMMAND</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Incident Command System (ICS) & Struktur Supervisi</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Komando lapangan yang tertib, terarah, dan memiliki garis wewenang yang tegas adalah kunci keselamatan seluruh personel dan keberhasilan penanganan krisis taktis di Los Santos County.
-                    </p>
-                </div>
-
-                <!-- 1. SUPERVISORY TERMINOLOGY -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 100 &bull; DEFINISI JABATAN SUPERVISI</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-sitemap text-blue-400"></i> Terminologi & Peran Komando Supervisi
-                    </h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-amber-500/10 text-lssd-gold text-[10px] font-bold">EXECUTIVE</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Executive Offices</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Personel dengan rank di atas Commander yang memegang kendali eksekutif tertinggi dalam struktur organisasi LSSD.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[10px] font-bold">DIVISION CHIEF</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Division Chief</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Sworn Personnel yang ditunjuk untuk memimpin secara penuh suatu Bureau, Group, Area, atau Division kerja.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 text-[10px] font-bold">FIELD COMMAND</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Field Commander</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Personel yang memegang komando operasional atas situasi darurat berskala besar atau detail lapangan special events; berwenang mendirikan Field Command Post.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 text-[10px] font-bold">INCIDENT COMMAND</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Incident Commander (IC)</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Personel yang mengambil alih kendali komando atas situasi darurat spontan di lapangan tanpa mensyaratkan berdirinya tenda/pos taktis komando.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold">SHIFT SUPERVISION</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Watch Commander</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Lieutenant yang bertanggung jawab atas kepemimpinan, pengawasan, dan kendali seluruh operasional selama shift tertentu pada Geographic Area / Division.</p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 text-[10px] font-bold">LINE SUPERVISOR</span>
-                            <h4 class="text-white font-bold mt-2 mb-1">Field Supervisor</h4>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">Sergeant / Deputy yang menjalankan fungsi pengawasan lapangan harian, mengevaluasi laporan, penggunaan force, dan pursuit.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2. FIELD COMMAND POST & SUCCESSION OF COMMAND -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    
-                    <!-- Command Posts -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 105</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-tent text-amber-400"></i> Field Command Post (FCP)
-                        </h3>
-                        <p class="text-xs text-slate-300 mb-3 leading-relaxed">
-                            Fasilitas komando taktis seluler atau stasioner sementara yang didirikan oleh Field Commander untuk menjalankan fungsi:
-                        </p>
-                        <ul class="space-y-2 text-xs text-slate-200">
-                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <i class="fa-solid fa-crosshairs text-lssd-gold mt-0.5"></i>
-                                <span>Mengarahkan dan mengendalikan seluruh taktik operasi selama penanganan insiden darurat skala besar.</span>
-                            </li>
-                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <i class="fa-solid fa-brain text-purple-400 mt-0.5"></i>
-                                <span>Mengumpulkan, mengolah, dan mengirimkan intelijen insiden secara langsung ke Department Operations Center (DOC).</span>
-                            </li>
-                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <i class="fa-solid fa-boxes-stacked text-blue-400 mt-0.5"></i>
-                                <span>Mengajukan alokasi Sworn Personnel tambahan, peralatan khusus (specialized equipment), dan logistik darurat.</span>
-                            </li>
-                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2">
-                                <i class="fa-solid fa-handshake-angle text-emerald-400 mt-0.5"></i>
-                                <span>Mengoordinasikan bantuan antar-lembaga (mutual aid) dari kepolisian lain, pemadam, atau medis melalui DOC.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Succession of Command -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 110</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-arrow-right-arrow-left text-blue-400"></i> Succession & Transfer of Command
-                        </h3>
-                        <div class="bg-lssd-card p-3.5 rounded-xl border border-lssd-border mb-3 text-xs">
-                            <strong class="text-white block mb-1 text-emerald-400">Tata Cara Pengambilalihan Komando:</strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Personel dengan pangkat lebih tinggi berwenang mengambil alih komando lapangan dengan cara <b>memperkenalkan diri secara jelas serta memberikan notifikasi resmi</b> kepada personel yang sedang memegang komando sebelumnya.
-                            </p>
-                        </div>
-
-                        <div class="space-y-2 text-xs">
-                            <strong class="text-lssd-gold block font-semibold">3 Kondisi Wajib Dilakukan Transfer of Command:</strong>
-                            <div class="bg-lssd-base p-2.5 rounded-lg border border-lssd-border text-slate-300 text-[11px]">
-                                <b>1. Melampaui Kapasitas:</b> Situasi di lapangan dinilai telah melebihi kapasitas kendali personel yang memegang komando saat itu.
-                            </div>
-                            <div class="bg-lssd-base p-2.5 rounded-lg border border-lssd-border text-slate-300 text-[11px]">
-                                <b>2. Kewenangan Tumpang Tindih:</b> Terjadi <i>overlapping authority</i> antar-unit atau divisi dalam penanganan insiden.
-                            </div>
-                            <div class="bg-lssd-base p-2.5 rounded-lg border border-lssd-border text-slate-300 text-[11px]">
-                                <b>3. Koreksi Taktis & Disiplin:</b> Diperlukan tindakan penegakan disiplin atau perbaikan taktis mendesak di tempat kejadian.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. CRIME SCENE & BARRICADED SITUATION COMMAND -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-                    <div class="bg-lssd-dark p-5 rounded-2xl border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 423</span>
-                        <h4 class="text-sm font-bold text-white mb-2 flex items-center gap-1.5">
-                            <i class="fa-solid fa-tape text-amber-400"></i> Crime Scene Supervision
-                        </h4>
-                        <p class="text-slate-300 text-[11px] leading-relaxed mb-3">
-                            Senior investigating Deputy yang hadir di lokasi memiliki wewenang penuh serta bertanggung jawab secara menyeluruh atas pengawasan, pengamanan, dan kendali operasional di area TKP.
-                        </p>
-                        <ul class="list-disc pl-4 space-y-1 text-slate-300 text-[11px]">
-                            <li>Memelihara keutuhan & integritas area steril crime scene.</li>
-                            <li>Mengatur penempatan personel penjaga garis perimeter.</li>
-                            <li>Melindungi alat bukti dari kontaminasi pihak luar.</li>
-                            <li>Mengelola proses penanganan hingga dialihkan secara resmi.</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-lssd-dark p-5 rounded-2xl border border-lssd-border">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 462.10</span>
-                        <h4 class="text-sm font-bold text-white mb-2 flex items-center gap-1.5">
-                            <i class="fa-solid fa-shield-cat text-rose-400"></i> Barricaded Suspect Command Rule
-                        </h4>
-                        <p class="text-slate-300 text-[11px] leading-relaxed mb-3">
-                            Penetapan Incident Commander pada penanganan tersangka berbarikade ditentukan secara tegas berdasarkan asal kejadian:
-                        </p>
-                        <div class="space-y-2 text-[11px]">
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-purple-500/30">
-                                <b class="text-purple-400 block">Senior Investigating Deputy:</b>
-                                Bertindak sebagai Incident Commander apabila situasi berkembang dari pelaksanaan <i>follow-up investigation</i>.
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-blue-500/30">
-                                <b class="text-blue-400 block">Senior Uniformed Deputy:</b>
-                                Bertindak sebagai Incident Commander apabila insiden terjadi secara spontan di lapangan (<i>spontaneous incident</i>).
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
             <!-- 5. FLEET, KENDARAAN & SERAGAM -->
             <div id="page-fleet" class="page-content space-y-8">
                 
@@ -2857,211 +2890,6 @@
                                     <span>10. Wawancara saksi</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- 7. POLICY & CODE OF CONDUCT -->
-            <div id="page-rules" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-cyan-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-cyan-400 font-bold uppercase tracking-widest font-mono">VOLUME 1 &bull; POLICY & PERSONAL CONDUCT</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Kode Etik Penegak Hukum & Regulasi Disiplin</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Integritas dan kehormatan lencana Los Santos County Sheriff's Department dibangun dari kepatuhan mutlak terhadap etika, profesionalisme, serta perlakuan yang adil terhadap seluruh masyarakat.
-                    </p>
-                </div>
-
-                <!-- 1. LAW ENFORCEMENT CODE OF ETHICS -->
-                <div class="bg-gradient-to-r from-lssd-dark via-lssd-card to-lssd-dark rounded-2xl p-6 sm:p-8 border border-lssd-border shadow-xl">
-                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-lssd-border">
-                        <div>
-                            <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 200 &bull; STANDARD OF CONDUCT</span>
-                            <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                                <i class="fa-solid fa-scroll text-lssd-gold"></i> The Law Enforcement Code of Ethics
-                            </h3>
-                        </div>
-                        <i class="fa-solid fa-scale-balanced text-2xl text-lssd-gold hidden sm:block"></i>
-                    </div>
-
-                    <div class="space-y-4 text-xs text-slate-200 leading-relaxed font-sans italic bg-lssd-base/80 p-5 rounded-xl border border-lssd-border">
-                        <p>
-                            "As a law enforcement Deputy, my fundamental duty is to serve mankind—to safeguard lives and property, to protect the innocent against deception, the weak against oppression or intimidation, and the peaceful against violence or disorder, and to respect the Constitutional rights of all men to liberty, equality, and justice."
-                        </p>
-                        <p>
-                            "I will keep my private life unsullied as an example to all; maintain courageous calm in the face of danger, scorn, or ridicule; develop self-restraint; and be constantly mindful of the welfare of others. Honest in thought and deed in both my personal and official life, I will be exemplary in obeying the laws of the land and the regulations of my department. Whatever I see or hear of a confidential nature will be kept ever secret unless revelation is necessary in the performance of duty."
-                        </p>
-                        <p>
-                            "I will never act officiously or permit personal feelings, prejudices, animosities, or friendships to influence my decisions. With no compromise for crime and with relentless prosecution of criminals, I will enforce the law courteously and appropriately without fear or favor, malice or ill will, never employing unnecessary force or violence and never accepting gratuities."
-                        </p>
-                        <p class="not-italic text-lssd-gold font-semibold pt-2 border-t border-lssd-border text-right">
-                            &mdash; Sumpah Jabatan Sworn Personnel LSSD
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 2. GENERAL POLICY & ZERO-TOLERANCE RULES -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 210 &bull; ATURAN DISIPLIN UMUM</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-gavel text-amber-400"></i> Ketentuan Disiplin & Larangan Mutlak
-                    </h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
-                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
-                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-ban"></i> Larangan Geng Kepolisian:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Personel <b>dilarang keras berpartisipasi dalam law enforcement gang</b> atau klik tertutup ilegal dalam tubuh kepolisian. Pelanggaran berakibat <b>pemecatan seketika</b>.
-                            </p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
-                            <strong class="text-rose-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-person-walking-arrow-right"></i> Larangan Mogok Kerja:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Sworn Personnel <b>tidak memiliki hak untuk mogok kerja atau memperlambat pekerjaan (work slowdown)</b>. Penegakan hukum dan perlindungan masyarakat wajib berlangsung tanpa henti.
-                            </p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <strong class="text-emerald-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-hands-holding-child"></i> Pemolisian Bebas Bias:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Dilarang segala bentuk diskriminasi berdasarkan ras, agama, warna kulit, etnis, usia, jenis kelamin, identitas gender, status imigrasi, pekerjaan, atau tunawisma.
-                            </p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <strong class="text-amber-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-martini-glass-citrus"></i> Alkohol & Zat Terlarang:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Dilarang mengonsumsi minuman beralkohol hingga mempengaruhi kinerja saat dinas, dan dilarang mengonsumsi alkohol di seluruh fasilitas/gedung/parkiran departemen.
-                            </p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <strong class="text-blue-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-smoking"></i> Larangan Merokok:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Dilarang merokok di tempat kerja tertutup, gedung sewa kota, kendaraan dinas, serta dilarang membawa/merokok saat berinteraksi dengan masyarakat atau di tempat bisnis.
-                            </p>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <strong class="text-purple-400 block mb-1 flex items-center gap-1.5">
-                                <i class="fa-solid fa-flag"></i> Kewajiban Melapor Pelanggaran:
-                            </strong>
-                            <p class="text-slate-300 text-[11px] leading-relaxed">
-                                Personel yang mengetahui pelanggaran oleh personel lain <b>wajib segera melaporkannya ke supervisor atau Internal Affairs Division (LSSD IA)</b>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. PRETEXTUAL STOPS & MEDIA RELATIONS -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-xs">
-                    
-                    <!-- Pretextual Stops -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-rose-400 font-bold uppercase tracking-widest font-mono">SECTION 220 &bull; PRETEXTUAL STOPS</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-traffic-light text-rose-400"></i> Larangan Pemeriksaan Pretekstual
-                        </h3>
-                        <div class="space-y-3 text-slate-300">
-                            <p class="text-[11px] leading-relaxed">
-                                Pemeriksaan pretekstual terjadi saat petugas memanfaatkan kecurigaan atau bukti atas pelanggaran lalu lintas ringan semata sebagai dalih untuk menggeledah dugaan kejahatan serius yang tidak berkaitan langsung.
-                            </p>
-                            <div class="bg-rose-950/30 p-3 rounded-lg border border-rose-500/30">
-                                <b class="text-rose-300 block mb-1">Kebijakan Departemen Secara Tegas Melarang Pretextual Stops:</b>
-                                <span class="text-[11px] text-slate-200">
-                                    Kecuali jika didasarkan informasi tambahan yang dapat dipertanggungjawabkan secara objektif terkait kejahatan serius: kekerasan, DUI, ugal-ugalan berbahaya, tabrak lari, perdagangan orang/narkotika, kejahatan senjata api, atau perampokan.
-                                </span>
-                            </div>
-                            <p class="text-[11px] text-lssd-tan">
-                                <b>Catatan Wajib:</b> Dasar pertimbangan pemeriksaan pretekstual wajib dijelaskan dan terekam secara jelas di Kamera Badan (Body-Worn Video).
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- News Media Relations -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest font-mono">SECTION 300 &bull; COMMUNITY AFFAIRS</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-newspaper text-blue-400"></i> Hubungan Media Berita & Kebebasan Pers
-                        </h3>
-                        <div class="space-y-3 text-slate-300 text-[11px]">
-                            <p class="leading-relaxed">
-                                LSSD menjalin kerja sama profesional dengan media berita agar informasi publik tersampaikan secara transparan tanpa mengganggu proses investigasi dan peradilan.
-                            </p>
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <b class="text-white block mb-1">Akses Area Insiden:</b>
-                                Reporter berita dapat berada di area sekitar insiden jika memiliki <i>media news pass</i> resmi, namun <b>tidak berwenang masuk ke area yang telah dipasangi garis steril (crime scene)</b> untuk menjaga keutuhan barang bukti.
-                            </div>
-                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
-                                <b class="text-white block mb-1">Hak Dokumentasi:</b>
-                                Reporter berhak memotret atau melaporkan apa yang mereka amati dari tempat yang sah. Petugas dilarang merampas kamera atau mengintimidasi media selama dalam batas hukum.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. PATROL CONDUCT CHECKLIST (10 ATURAN PERILAKU) -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">BAB 2-06/050.00 &bull; 10 STANDAR PERILAKU PATROLI</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-list-check text-lssd-gold"></i> 10 Kewajiban Standar Perilaku Patrol Deputies
-                    </h3>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">1</span>
-                            <span class="text-slate-200">Mematuhi Chain of Command (Rantai Komando).</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">2</span>
-                            <span class="text-slate-200">Mematuhi seluruh Department SOP dan Manual.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">3</span>
-                            <span class="text-slate-200">Menjaga disiplin komunikasi radio (radio discipline).</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">4</span>
-                            <span class="text-slate-200">Menggunakan kendaraan dinas secara bertanggung jawab.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">5</span>
-                            <span class="text-slate-200">Menggunakan kekuatan (force) secara proporsional.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">6</span>
-                            <span class="text-slate-200">Menjaga etika & profesionalisme terhadap masyarakat.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">7</span>
-                            <span class="text-slate-200">Menghormati wewenang agency / kepolisian lain.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">8</span>
-                            <span class="text-slate-200">Menjaga keaslian & integritas laporan perkara.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">9</span>
-                            <span class="text-slate-200">Tidak menyalahgunakan kewenangan hukum jabatan.</span>
-                        </div>
-                        <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2.5">
-                            <span class="w-6 h-6 rounded-full bg-lssd-base text-lssd-gold flex items-center justify-center font-bold text-xs flex-shrink-0">10</span>
-                            <span class="text-slate-200">Mengutamakan keselamatan dan ketertiban publik.</span>
                         </div>
                     </div>
                 </div>
@@ -3627,178 +3455,6 @@
         <!-- /PAGE: PROMOTION REQUIREMENT -->
 
 
-            <!-- 10. DOKUMEN KONTROL & KREDIT -->
-            <div id="page-kredit" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-purple-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-purple-400 font-bold uppercase tracking-widest font-mono">DOCUMENT CONTROL & ACKNOWLEDGMENTS</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Pengesahan Dokumen & Kredit Resmi Nusa V</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Dokumen manual operasional dan handbook ini disusun untuk Faction Los Santos County Sheriff's Department (LSSD) pada server roleplay Nusa V.
-                    </p>
-                </div>
-
-                <!-- 1. LEMBAR KONTROL DOKUMEN RESMI -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <div class="mb-4">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">DOCUMENT CONTROL SHEET</span>
-                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                            <i class="fa-solid fa-stamp text-purple-400"></i> Informasi & Status Dokumen Departemen
-                        </h3>
-                    </div>
-
-                    <div class="overflow-x-auto rounded-xl border border-lssd-border">
-                        <table class="w-full text-left text-xs">
-                            <thead>
-                                <tr class="bg-lssd-card text-lssd-gold font-bold border-b border-lssd-border">
-                                    <th class="py-3 px-4 w-1/3">BIDANG DOKUMEN</th>
-                                    <th class="py-3 px-4">INFORMASI RESMI</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-lssd-border text-slate-200">
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Nomor Dokumen (Document Number)</td>
-                                    <td class="py-2.5 px-4 font-mono text-lssd-goldLight">LSSD-DOC-SOP-00226 &bull; LSSD-MPP-2026-001 &bull; LSSD-DOC-SOP-00126</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Judul Dokumen (Document Title)</td>
-                                    <td class="py-2.5 px-4 font-bold text-white">Patrol Operations Handbook & Policy and Procedure Manual</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Edisi / Volume</td>
-                                    <td class="py-2.5 px-4 font-mono">2026 Edition (Volume 0, 1, 2, 3, 4)</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Versi Dokumen</td>
-                                    <td class="py-2.5 px-4 font-mono text-emerald-400">1.0 (Active Operational)</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Klasifikasi Akses</td>
-                                    <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded bg-amber-900/40 text-amber-300 font-semibold text-[10px]">Department Internal Use</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Otoritas Penerbit (Issuing Authority)</td>
-                                    <td class="py-2.5 px-4">Professional Standards Bureau</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Induk Organisasi</td>
-                                    <td class="py-2.5 px-4">Los Santos County Sheriff's Department</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-2.5 px-4 font-semibold text-slate-300">Otoritas Peninjau (Review Authority)</td>
-                                    <td class="py-2.5 px-4">Sheriff / Undersheriff</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 2. KREDIT RESMI TIM NUSA V SERVER -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <div class="mb-4">
-                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">ACKNOWLEDGMENTS</span>
-                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                            <i class="fa-solid fa-heart text-rose-500"></i> Kontributor & Pengesah Dokumen Manual (Nusa V)
-                        </h3>
-                        <p class="text-xs text-slate-400 mt-1">
-                            Penyelesaian manual ini adalah hasil komitmen kolektif dan kontribusi para individu di Server Nusa V, terutama dalam Faction Los Santos County Sheriff's Department:
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-lssd-gold border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-server"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Pakle (bangtupai)</h4>
-                                <p class="text-[11px] text-lssd-gold">Server Community Management</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Bertanggung jawab besar dalam pengesahan manual ke dalam server Nusa V.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-blue-400 border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-scale-balanced"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Fallon</h4>
-                                <p class="text-[11px] text-blue-400">Leader of Legal Support</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Bertanggung jawab besar dalam pengesahan manual serta ide regulasi ke dalam server.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-emerald-400 border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-gavel"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">PinguinBiru (OPICK)</h4>
-                                <p class="text-[11px] text-emerald-400">Legal Support</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Bertanggung jawab besar dalam perumusan legalitas dan penyelarasan peraturan ke server.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-amber-400 border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Kris Davion (Babibli)</h4>
-                                <p class="text-[11px] text-amber-400">Penanggung Jawab LSSD / Legal Support</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Pimpinan pengesahan departemen dan perumusan standar operasional kepolisian.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-purple-400 border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-shield"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Eleven Chace</h4>
-                                <p class="text-[11px] text-purple-400">Penanggung Jawab Department Los Santos Sheriff</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Penanggung jawab utama operasional dan pembinaan faksi LSSD.</p>
-                            </div>
-                        </div>
-
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border flex items-start space-x-3">
-                            <div class="w-9 h-9 rounded-full bg-lssd-dark text-cyan-400 border border-lssd-border flex items-center justify-center font-bold flex-shrink-0">
-                                <i class="fa-solid fa-language"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm">Rasyid Bin Jalal</h4>
-                                <p class="text-[11px] text-cyan-400">Editor Penerjemah Dokumen Manual LSSD</p>
-                                <p class="text-[11px] text-slate-400 mt-0.5">Penyusunan kodifikasi teks, terminologi, dan translasi operasional manual.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tim Auditor Dokumen -->
-                    <div class="mt-6 p-4 rounded-xl bg-lssd-base border border-lssd-border text-xs">
-                        <strong class="text-white block mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-clipboard-check text-emerald-400"></i> Tim Auditor Dokumen Manual LSSD:
-                        </strong>
-                        <div class="flex flex-wrap gap-2 text-slate-300">
-                            <span class="px-2.5 py-1 rounded-lg bg-lssd-card border border-lssd-border font-medium">&bull; Abbey Eilish</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-lssd-card border border-lssd-border font-medium">&bull; Valentine Anastacius Mildred Garcia</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-lssd-card border border-lssd-border font-medium">&bull; Zacc Hilton</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-lssd-card border border-lssd-border font-medium">&bull; Celcius E. Weinhofen</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. HAK KEKAYAAN & DISCLAIMER -->
-                <div class="bg-lssd-card p-5 rounded-2xl border border-lssd-border text-xs text-slate-300 space-y-2">
-                    <strong class="text-white block font-bold"><i class="fa-solid fa-circle-exclamation text-lssd-gold mr-1.5"></i> Hak Cipta & Ketentuan Penggunaan:</strong>
-                    <p class="text-[11px] text-slate-400 leading-relaxed">
-                        Dokumen dan sistem manual ini tetap merupakan properti resmi dari <b>Los Santos Sheriff's Department (Server Nusa V)</b>. Dilarang melakukan pengubahan, reproduksi, atau distribusi di luar ketentuan resmi tanpa otorisasi dari Professional Standards Bureau atau Command Staff.
-                    </p>
-                </div>
-
-            </div>
-
-
         </div><!-- /Pages Container -->
     </main>
 
@@ -3860,21 +3516,19 @@
     <script>
         // Tab Titles and Icons Mapping
         const pageMeta = {
-            'beranda': { title: 'Beranda & Gambaran', icon: 'fa-house-chimney' },
-            'radio': { title: 'Komunikasi & 10-Codes', icon: 'fa-walkie-talkie' },
-            'taktis': { title: 'SOP & Prosedur Taktis', icon: 'fa-shield-halved' },
-            'response': { title: 'Initial Response Procedure (1-on-1)', icon: 'fa-layer-group' },
-            'weapon': { title: 'Weapon Classification & Authority', icon: 'fa-gun' },
-            'ic': { title: 'Incident Command & Supervisi', icon: 'fa-sitemap' },
-            'fleet': { title: 'Fleet, Kendaraan & Seragam', icon: 'fa-car-side' },
-            'investigasi': { title: 'Investigasi & Internal', icon: 'fa-magnifying-glass-chart' },
-            'rules': { title: 'Policy & Code of Conduct', icon: 'fa-scale-balanced' },
-            'struktur': { title: 'Pangkat & Organisasi', icon: 'fa-ranking-star' },
-            'promosi': { title: 'Promotion Requirement', icon: 'fa-graduation-cap' },
-            'kredit': { title: 'Dokumen Kontrol & Kredit', icon: 'fa-award' }
+            'beranda': { title: 'Home', icon: 'fa-house-chimney' },
+            'taktis': { title: 'SOP & Procedure', icon: 'fa-shield-halved' },
+            'rules': { title: 'Police & Code of Conduct', icon: 'fa-scale-balanced' },
+            'radio': { title: 'Communication & 10-Codes', icon: 'fa-walkie-talkie' },
+            'response': { title: 'Initial Response Procedure', icon: 'fa-layer-group' },
+            'weapon': { title: 'Weapon & Authority', icon: 'fa-gun' },
+            'fleet': { title: 'Fleet & Uniform Authority', icon: 'fa-car-side' },
+            'investigasi': { title: 'Investigation & Internal', icon: 'fa-magnifying-glass-chart' },
+            'struktur': { title: 'Rank & Organization', icon: 'fa-ranking-star' },
+            'promosi': { title: 'Promotion Requirement', icon: 'fa-graduation-cap' }
         };
 
-        const pageOrder = ['beranda', 'radio', 'taktis', 'response', 'weapon', 'ic', 'fleet', 'investigasi', 'rules', 'struktur', 'promosi', 'kredit'];
+        const pageOrder = ['beranda', 'taktis', 'rules', 'radio', 'response', 'weapon', 'fleet', 'investigasi', 'struktur', 'promosi'];
 
         // Live Real-Time Digital Clock
         function updateClock() {
