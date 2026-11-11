@@ -167,6 +167,9 @@
                     <button onclick="switchTab('taktis')" id="nav-taktis" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-shield-halved w-6 text-center mr-2 text-amber-400"></i> SOP & Prosedur Taktis
                     </button>
+                    <button onclick="switchTab('response')" id="nav-response" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
+                        <i class="fa-solid fa-layer-group w-6 text-center mr-2 text-emerald-400"></i> Initial Response Procedure
+                    </button>
                     <button onclick="switchTab('weapon')" id="nav-weapon" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-gun w-6 text-center mr-2 text-rose-400"></i> Weapon & Authority
                     </button>
@@ -185,15 +188,15 @@
                     <button onclick="switchTab('struktur')" id="nav-struktur" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-ranking-star w-6 text-center mr-2 text-yellow-300"></i> Pangkat & Organisasi
                     </button>
+                    <button onclick="switchTab('promosi')" id="nav-promosi" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
+                        <i class="fa-solid fa-graduation-cap w-6 text-center mr-2 text-amber-400"></i> Promotion Requirement
+                    </button>
                 </nav>
             </div>
 
             <div>
-                <p class="px-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Alat Operasional</p>
+                <p class="px-3 text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Dokumen & Rujukan</p>
                 <nav class="space-y-0.5">
-                    <button onclick="switchTab('laporan')" id="nav-laporan" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-semibold text-slate-200 rounded-lg bg-lssd-card/60 border-l-2 border-lssd-gold/40">
-                        <i class="fa-solid fa-file-signature w-6 text-center mr-2 text-lssd-gold"></i> Generator Laporan Patroli
-                    </button>
                     <button onclick="switchTab('kredit')" id="nav-kredit" class="nav-item w-full flex items-center px-3 py-2.5 text-left text-xs font-medium text-slate-200 rounded-lg">
                         <i class="fa-solid fa-award w-6 text-center mr-2 text-purple-400"></i> Dokumen Kontrol & Kredit
                     </button>
@@ -248,11 +251,6 @@
                 <!-- Print Button -->
                 <button onclick="window.print()" class="no-print hidden sm:flex items-center px-3 py-1.5 bg-lssd-card hover:bg-lssd-cardHover border border-lssd-border hover:border-lssd-gold text-white rounded-lg transition text-xs font-semibold" title="Cetak / Save as PDF">
                     <i class="fa-solid fa-print mr-1.5 text-lssd-gold"></i> Cetak Dokumen
-                </button>
-
-                <!-- Quick Report Button -->
-                <button onclick="switchTab('laporan')" class="no-print px-3 py-1.5 bg-lssd-gold hover:bg-lssd-goldHover text-lssd-base font-bold rounded-lg transition text-xs shadow-md flex items-center" title="Buka Form Laporan">
-                    <i class="fa-solid fa-plus mr-1"></i> <span class="hidden md:inline">Buat</span> Laporan
                 </button>
             </div>
         </header>
@@ -319,8 +317,8 @@
                             <button onclick="switchTab('taktis')" class="px-5 py-2.5 bg-lssd-card hover:bg-lssd-cardHover border border-lssd-border hover:border-lssd-gold text-white font-semibold rounded-xl transition shadow-md flex items-center text-xs sm:text-sm">
                                 <i class="fa-solid fa-shield-halved mr-2 text-lssd-gold"></i> SOP & Prosedur Taktis
                             </button>
-                            <button onclick="switchTab('laporan')" class="px-5 py-2.5 bg-lssd-card hover:bg-lssd-cardHover border border-lssd-border hover:border-emerald-400 text-white font-semibold rounded-xl transition shadow-md flex items-center text-xs sm:text-sm">
-                                <i class="fa-solid fa-file-circle-plus mr-2 text-emerald-400"></i> Buat Laporan Patroli
+                            <button onclick="switchTab('promosi')" class="px-5 py-2.5 bg-lssd-card hover:bg-lssd-cardHover border border-lssd-border hover:border-amber-400 text-white font-semibold rounded-xl transition shadow-md flex items-center text-xs sm:text-sm">
+                                <i class="fa-solid fa-graduation-cap mr-2 text-amber-400"></i> Syarat Promosi Jabatan
                             </button>
                         </div>
                     </div>
@@ -474,8 +472,8 @@
                                 <h3 class="text-sm font-bold text-white mt-2 mb-1.5">Internal Operations</h3>
                                 <p class="text-xs text-slate-300 leading-relaxed">Administrasi lapangan, operasional dispatch, pemrosesan tahanan (prisoner processing), serta penyusunan laporan resmi MDT.</p>
                             </div>
-                            <button onclick="switchTab('laporan')" class="mt-4 text-left text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
-                                Generator Laporan <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            <button onclick="switchTab('promosi')" class="mt-4 text-left text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                                Syarat Promosi <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </button>
                         </div>
                     </div>
@@ -1319,6 +1317,417 @@
                         <i class="fa-solid fa-award text-lssd-gold text-2xl flex-shrink-0"></i>
                         <p class="text-slate-200 leading-relaxed">
                             <b>Filosofi Kinerja (Section 2-06/070.00):</b> <i>"Quantity of enforcement actions shall not be used as the sole measurement of Deputy performance."</i> Keberhasilan dinilai dari kualitas pelayanan warga, keselamatan operasional, kepatuhan SOP, radio discipline, teamwork, serta kemampuan menyelesaikan konflik secara damai.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 5. STANDARDIZED INITIAL RESPONSE PROCEDURE -->
+            <div id="page-response" class="page-content space-y-8">
+                
+                <!-- Section Header -->
+                <div class="bg-lssd-card border-l-4 border-emerald-500 p-5 rounded-r-xl border border-lssd-border shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest font-mono">STANDARDIZED INITIAL RESPONSE PROCEDURE &bull; 1-ON-1 SITUATION</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Initial Response Procedure & Komposisi Unit</h2>
+                        <p class="text-xs text-slate-300 mt-1">
+                            Pedoman dasar batas maksimal unit patroli dan komposisi armada penanganan perkara demi menjaga keseimbangan roleplay (Police vs Criminal) di Nusa V.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
+                        <button onclick="scrollToElement('sec-response-rules')" class="px-3 py-1.5 bg-lssd-dark hover:bg-lssd-base border border-lssd-border hover:border-lssd-gold text-slate-300 text-xs rounded-lg transition font-medium">
+                            <i class="fa-solid fa-code-fork text-amber-400 mr-1"></i> Split & Primary
+                        </button>
+                        <button onclick="scrollToElement('sec-unit-limits')" class="px-3 py-1.5 bg-lssd-dark hover:bg-lssd-base border border-lssd-border hover:border-lssd-gold text-slate-300 text-xs rounded-lg transition font-medium">
+                            <i class="fa-solid fa-layer-group text-emerald-400 mr-1"></i> Batas Unit
+                        </button>
+                        <button onclick="scrollToElement('sec-bank-robberies')" class="px-3 py-1.5 bg-lssd-dark hover:bg-lssd-base border border-lssd-border hover:border-lssd-gold text-slate-300 text-xs rounded-lg transition font-medium">
+                            <i class="fa-solid fa-building-columns text-blue-400 mr-1"></i> 10-90 Robbery
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PREAMBLE PHILOSOPHY CALLOUT -->
+                <div class="bg-gradient-to-r from-lssd-dark via-lssd-card to-lssd-dark rounded-2xl p-5 sm:p-7 border border-emerald-500/30 shadow-xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-xl flex-shrink-0 mt-0.5">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-200 leading-relaxed font-sans">
+                            <h3 class="text-sm font-bold text-white uppercase tracking-wider">Filosofi & Tujuan Prosedur Respon Awal (1-on-1 Situation)</h3>
+                            <p class="text-slate-300">
+                                <i>"Standardized Initial Response Procedure (1-ON-1 situation) ini dibuat untuk menjadi panduan dasar bagi member LEO agar menjaga keseimbangan roleplay antara Police dan Criminal. Semua prosedur ini tidak menjadi aturan ketat yang harus selalu dipenuhi, namun sangat dianjurkan untuk dipergunakan setiap saat bila kondisi memungkinkan."</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. ATURAN DASAR: SPLIT UNIT & PRIMARY UNIT -->
+                <div id="sec-response-rules" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Split Unit -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest font-mono">TACTICAL MANEUVER</span>
+                            <span class="px-2 py-0.5 rounded bg-amber-950 text-amber-300 text-[10px] font-bold">Wajib Izin</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-code-fork text-amber-400"></i> Ketentuan Split Unit
+                        </h3>
+                        <p class="text-xs text-slate-400 mb-3 leading-relaxed">
+                            Pemisahan unit dari rombongan pursuit utama atau konvoi taktis harus memenuhi ketentuan berikut:
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-200">
+                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2.5">
+                                <i class="fa-solid fa-user-check text-amber-400 mt-0.5"></i>
+                                <span><b>Harus izin supervisor:</b> Setiap tindakan pemisahan unit wajib dilaporkan dan disetujui oleh Supervisor / IC di radio.</span>
+                            </li>
+                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2.5">
+                                <i class="fa-solid fa-shield-heart text-emerald-400 mt-0.5"></i>
+                                <span><b>Utamakan roleplay officer safety:</b> Pertimbangkan risiko ambush, jumlah suspect, dan jangan memposisikan diri dalam bahaya fatal seorang diri.</span>
+                            </li>
+                            <li class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-start gap-2.5">
+                                <i class="fa-solid fa-tower-broadcast text-blue-400 mt-0.5"></i>
+                                <span><b>Disiplin Radio:</b> Radio sebagai alat komunikasi utama tetap dijaga dengan baik, laporkan rute pecahan secara singkat dan jelas.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Primary Unit -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest font-mono">PURSUIT LEAD</span>
+                            <span class="px-2 py-0.5 rounded bg-blue-950 text-blue-300 text-[10px] font-bold">Vehicle Class Match</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-car text-blue-400"></i> Ketentuan Primary Unit
+                        </h3>
+                        <p class="text-xs text-slate-300 mb-3 leading-relaxed">
+                            Bila kendaraan <i>suspect</i> termasuk ke dalam kelas:
+                        </p>
+                        
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 rounded-lg bg-lssd-card border border-blue-500/40 text-blue-300 font-mono font-bold text-xs">Class B</span>
+                            <span class="px-3 py-1 rounded-lg bg-lssd-card border border-blue-500/40 text-blue-300 font-mono font-bold text-xs">Class C</span>
+                            <span class="px-3 py-1 rounded-lg bg-lssd-card border border-blue-500/40 text-blue-300 font-mono font-bold text-xs">Class D</span>
+                        </div>
+
+                        <div class="space-y-2.5 text-xs text-slate-300">
+                            <div class="bg-lssd-card p-3 rounded-lg border border-lssd-border">
+                                <b class="text-white block mb-1">Patrol Unit Boleh Menjadi PRIMARY:</b>
+                                Kendaraan patroli standar (CVPI / Basic Utility) diperbolehkan menjadi unit utama di garis depan pengejaran bila kendaraan suspect ada di kelas B, C, atau D.
+                            </div>
+                            <div class="bg-lssd-base p-2.5 rounded-lg border border-lssd-border text-[11px] text-lssd-tan">
+                                <i class="fa-solid fa-circle-exclamation mr-1 text-lssd-gold"></i>
+                                <b>Hak Prerogatif IC:</b> Incident Commander (IC) tetap memegang wewenang penuh untuk melakukan pergantian primary unit ke Interceptor kapan saja situasi menuntut akselerasi lebih tinggi.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2. MAXIMUM UNIT & KOMPOSISI PERKARA (CARDS & DETAIL) -->
+                <div id="sec-unit-limits" class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                        <div>
+                            <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">MAXIMUM UNIT & COMPOSITION</span>
+                            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-layer-group text-emerald-400"></i> Matriks Maksimal Unit & Komposisi Penanganan
+                            </h3>
+                        </div>
+                        <span class="text-xs text-slate-400 font-mono">Batas Respon Resmi Faksi</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                        
+                        <!-- 10-34 & 31A -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 flex flex-col justify-between hover:border-emerald-500/40 transition">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-mono font-bold text-amber-400">10-34 &bull; 10-31A</span>
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/40 font-mono">MAX 3 UNIT</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-white mb-2">Illegal Activity & House Robbery</h4>
+                                <p class="text-xs text-slate-300 mb-4 leading-relaxed">Pemberantasan aktivitas ilegal atau perampokan rumah warga.</p>
+                                
+                                <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border space-y-1.5 text-xs font-mono">
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-car-side text-blue-400 mr-1.5"></i> Patrol / Basic</span>
+                                        <b class="text-white">2 Unit</b>
+                                    </div>
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-motorcycle text-cyan-400 mr-1.5"></i> Motorcycle</span>
+                                        <b class="text-white">1 Unit</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10-60A -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 flex flex-col justify-between hover:border-emerald-500/40 transition">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-mono font-bold text-amber-400">10-60A</span>
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/40 font-mono">MAX 4 UNIT</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-white mb-2">Car Stealing (Pencurian Mobil)</h4>
+                                <p class="text-xs text-slate-300 mb-4 leading-relaxed">Respons pengejaran kasus pencurian dan pelarian kendaraan.</p>
+                                
+                                <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border space-y-1.5 text-xs font-mono">
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-car-side text-blue-400 mr-1.5"></i> Patrol / Basic</span>
+                                        <b class="text-white">3 Unit</b>
+                                    </div>
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-motorcycle text-cyan-400 mr-1.5"></i> Motorcycle</span>
+                                        <b class="text-white">1 Unit</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10-31B -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 flex flex-col justify-between hover:border-emerald-500/40 transition">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-mono font-bold text-amber-400">10-31B</span>
+                                    <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/40 font-mono">MAX 6 UNIT</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-white mb-2">Robbery Store (Minimarket)</h4>
+                                <p class="text-xs text-slate-300 mb-4 leading-relaxed">Perampokan bersenjata minimarket / toko 24 jam.</p>
+                                
+                                <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border space-y-1.5 text-xs font-mono">
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-car-side text-blue-400 mr-1.5"></i> Patrol / Basic</span>
+                                        <b class="text-white">2 Unit</b>
+                                    </div>
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-bolt text-yellow-400 mr-1.5"></i> Interceptor / Speed</span>
+                                        <b class="text-white">2 Unit</b>
+                                    </div>
+                                    <div class="flex items-center justify-between text-slate-200">
+                                        <span><i class="fa-solid fa-motorcycle text-cyan-400 mr-1.5"></i> Motorcycle</span>
+                                        <b class="text-white">1 Unit</b>
+                                    </div>
+                                    <div class="flex items-center justify-between text-slate-300 pt-1 border-t border-lssd-border text-[11px]">
+                                        <span><i class="fa-solid fa-helicopter text-purple-400 mr-1.5"></i> Helikopter (AERO)</span>
+                                        <b class="text-purple-300">Opsional</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 3. DETAIL 10-90 PERAMPOKAN BANK & TOKO EMAS -->
+                <div id="sec-bank-robberies" class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border space-y-6">
+                    <div>
+                        <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">10-90 BANK ROBBERY SCENARIOS</span>
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-lssd-gold"></i> Komposisi Unit 10-90 Perampokan Bank & Jewelry
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                        
+                        <!-- 10-90 Fleeca Bank -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 space-y-4">
+                            <div class="flex items-center justify-between pb-2 border-b border-lssd-border">
+                                <h4 class="font-bold text-white text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-vault text-emerald-400"></i> Fleeca Bank
+                                </h4>
+                                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold font-mono">MAX 7 UNIT</span>
+                            </div>
+
+                            <!-- Case 1: 1 suspect vehicle -->
+                            <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border text-xs space-y-1.5">
+                                <span class="text-[10px] text-amber-400 font-bold uppercase font-mono">&bull; 1 Suspect Vehicle :</span>
+                                <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-300 font-mono">
+                                    <span>3 Patrol / Basic</span>
+                                    <span>2 Interceptor</span>
+                                    <span>1 Motorcycle</span>
+                                    <span>1 Helikopter</span>
+                                </div>
+                            </div>
+
+                            <!-- Case 2: 2+ suspect vehicles -->
+                            <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border text-xs space-y-1.5">
+                                <span class="text-[10px] text-yellow-400 font-bold uppercase font-mono">&bull; 2+ Suspect Vehicles :</span>
+                                <div class="grid grid-cols-2 gap-1 text-[11px] text-slate-300 font-mono">
+                                    <span>1 Patrol / Basic</span>
+                                    <span>4 Interceptor</span>
+                                    <span>1 Motorcycle</span>
+                                    <span>1 Helikopter</span>
+                                </div>
+                            </div>
+
+                            <p class="text-[11px] text-slate-400 font-sans leading-relaxed italic border-t border-lssd-border pt-2">
+                                *Jika kendaraan suspect terdapat lebih dari 2 kendaraan, 2 mobil patrol/basic bisa berganti menjadi mobil interceptor/speed unit sesuai keputusan IC.
+                            </p>
+                        </div>
+
+                        <!-- 10-90 Blaine County Bank -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 space-y-4">
+                            <div class="flex items-center justify-between pb-2 border-b border-lssd-border">
+                                <h4 class="font-bold text-white text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-building text-blue-400"></i> Blaine County Bank
+                                </h4>
+                                <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 text-xs font-bold font-mono">MAX 9 UNIT</span>
+                            </div>
+
+                            <div class="bg-lssd-base p-3.5 rounded-lg border border-lssd-border text-xs space-y-2 font-mono">
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-car-side text-blue-400 mr-1.5"></i> Patrol / Basic</span>
+                                    <b class="text-white">2 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-bolt text-yellow-400 mr-1.5"></i> Interceptor / Speed</span>
+                                    <b class="text-white">4 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-rose-300">
+                                    <span><i class="fa-solid fa-shield-virus mr-1.5"></i> Tactical (SWAT / SEB)</span>
+                                    <b class="text-rose-400">1 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-motorcycle text-cyan-400 mr-1.5"></i> Motorcycle</span>
+                                    <b class="text-white">1 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-helicopter text-purple-400 mr-1.5"></i> Helikopter (AERO)</span>
+                                    <b class="text-white">1 Unit</b>
+                                </div>
+                            </div>
+
+                            <p class="text-[11px] text-slate-400 font-sans leading-relaxed">
+                                Wilayah Paleto Bay & perbatasan padat. Pengerahan 1 unit taktis SEB (TARV/Heavy) diizinkan penuh untuk mitigasi baku tembak senjata berat.
+                            </p>
+                        </div>
+
+                        <!-- 10-90 Jewelry / Vangelico -->
+                        <div class="bg-lssd-card rounded-xl border border-lssd-border p-5 space-y-4">
+                            <div class="flex items-center justify-between pb-2 border-b border-lssd-border">
+                                <h4 class="font-bold text-white text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-gem text-amber-400"></i> Jewelry / Vangelico
+                                </h4>
+                                <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-xs font-bold font-mono">MAX 8 UNIT</span>
+                            </div>
+
+                            <div class="bg-lssd-base p-3.5 rounded-lg border border-lssd-border text-xs space-y-2 font-mono">
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-car-side text-blue-400 mr-1.5"></i> Patrol / Basic</span>
+                                    <b class="text-white">2 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-bolt text-yellow-400 mr-1.5"></i> Interceptor / Speed</span>
+                                    <b class="text-white">4 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-motorcycle text-cyan-400 mr-1.5"></i> Motorcycle</span>
+                                    <b class="text-white">1 Unit</b>
+                                </div>
+                                <div class="flex items-center justify-between text-slate-200">
+                                    <span><i class="fa-solid fa-helicopter text-purple-400 mr-1.5"></i> Helikopter (AERO)</span>
+                                    <b class="text-white">1 Unit</b>
+                                </div>
+                            </div>
+
+                            <p class="text-[11px] text-slate-400 font-sans leading-relaxed">
+                                Kecepatan tinggi dan manuver perkotaan. Empat Interceptor difokuskan menutup rute freeway dan exit alleyway.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 4. MAJOR HEISTS: BOBCAT & PACIFIC BANK ROBBERY (IC DISCRETION) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Bobcat Robbery -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-rose-500/30">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-truck-ramp-box text-rose-400"></i> Bobcat Robbery
+                            </span>
+                            <span class="px-2.5 py-1 rounded bg-rose-950/60 text-rose-300 border border-rose-500/30 text-[10px] font-bold font-mono">NO MAX LIMIT</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-300 leading-relaxed font-sans">
+                            <div class="p-3 bg-lssd-card rounded-lg border border-lssd-border">
+                                <b class="text-rose-300 block mb-1">Spesifikasi Unit:</b>
+                                Tidak ada spesifikasi jumlah unit tetap. Pengerahan unit ditentukan sepenuhnya oleh <b>Incident Commander (IC)</b> dalam situasi tersebut.
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                IC wajib menyesuaikan jumlah unit dan persenjataan berdasarkan kondisi kendaraan pelarian (apakah lapis baja/off-road) serta jumlah suspect di lokasi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pacific Bank Robbery -->
+                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-rose-500/30">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-landmark-dome text-rose-400"></i> Pacific Bank Robbery
+                            </span>
+                            <span class="px-2.5 py-1 rounded bg-rose-950/60 text-rose-300 border border-rose-500/30 text-[10px] font-bold font-mono">NO MAX LIMIT</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-300 leading-relaxed font-sans">
+                            <div class="p-3 bg-lssd-card rounded-lg border border-lssd-border">
+                                <b class="text-rose-300 block mb-1">Spesifikasi Unit:</b>
+                                Tidak ada batasan angka tetap. Seluruh alokasi unit berada di bawah <b>Diskresi Penuh Incident Commander (IC)</b>.
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                Ancaman tertinggi tingkat negara bagian. Unit taktis SWAT/SEB, penembak runduk (Class 4 sniper certified), dan dukungan udara Aero beroperasi serentak.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 5. INTERACTIVE CALCULATOR: CEK ALOKASI CEPAT LAPANGAN -->
+                <div class="bg-lssd-card rounded-2xl p-5 sm:p-7 border border-emerald-500/40 shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-widest font-mono">FIELD DISPATCH CALCULATOR</span>
+                            <h3 class="text-base font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-calculator text-emerald-400"></i> Kalkulator Respon Cepat Unit Patroli
+                            </h3>
+                        </div>
+                        <span class="text-xs text-slate-400">Pilih skenario panggilan radio untuk cek batas resmi</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="sm:col-span-2">
+                            <select id="quickScenarioSelect" onchange="calculateScenarioUnits()" class="w-full bg-lssd-dark border border-lssd-border rounded-xl px-3.5 py-2.5 text-xs text-white focus:border-emerald-400 focus:outline-none">
+                                <option value="1034">10-34 / 10-31A &mdash; Illegal Activity & House Robbery</option>
+                                <option value="1060a">10-60A &mdash; Car Stealing</option>
+                                <option value="1031b" selected>10-31B &mdash; Robbery Store (Minimarket)</option>
+                                <option value="fleeca1">10-90 &mdash; Fleeca Bank (1 Suspect Vehicle)</option>
+                                <option value="fleeca2">10-90 &mdash; Fleeca Bank (2+ Suspect Vehicles)</option>
+                                <option value="blaine">10-90 &mdash; Blaine County Bank</option>
+                                <option value="vangelico">10-90 &mdash; Jewelry / Vangelico</option>
+                                <option value="bobcat">10-90 &mdash; Bobcat Robbery (Major Heist)</option>
+                                <option value="pacific">10-90 &mdash; Pacific Standard Bank Robbery (Major Heist)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div id="quickMaxBadge" class="h-full bg-emerald-950/60 border border-emerald-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-emerald-300 text-sm">
+                                MAX 6 UNIT
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Breakdown Result Box -->
+                    <div id="quickBreakdownBox" class="p-4 rounded-xl bg-lssd-dark border border-lssd-border text-xs space-y-2">
+                        <div class="flex flex-wrap gap-2 text-slate-200 font-mono text-[11px]" id="quickUnitChips">
+                            <span class="px-2.5 py-1 rounded bg-lssd-card border border-blue-500/30">2 Patrol / Basic</span>
+                            <span class="px-2.5 py-1 rounded bg-lssd-card border border-yellow-500/30">2 Interceptor / Speed</span>
+                            <span class="px-2.5 py-1 rounded bg-lssd-card border border-cyan-500/30">1 Motorcycle</span>
+                            <span class="px-2.5 py-1 rounded bg-lssd-card border border-purple-500/30">Helikopter [Opsional]</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400 font-sans pt-1" id="quickNotesText">
+                            Pemberhentian perampokan toko. Helikopter bersifat opsional bila armada tersedia dan dibutuhkan untuk pengamatan rute pelarian.
                         </p>
                     </div>
                 </div>
@@ -2895,180 +3304,327 @@
             </div>
 
 
-            <!-- 9. GENERATOR LAPORAN PATROLI INTERAKTIF -->
-            <div id="page-laporan" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-lssd-gold p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">OPERATIONAL TOOL &bull; SECTION 2-06/030.20</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Generator Laporan Patroli Resmi LSSD</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Sistem pembuat format laporan patroli instan untuk Mobile Database Terminal (MDT), Forum Nusa V (BBCode), dan Discord. Isi kolom di bawah dan salin hasilnya dengan satu klik.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    
-                    <!-- LEFT COLUMN: INPUT FORM (7 COLS) -->
-                    <div class="lg:col-span-7 bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border space-y-6">
-                        
-                        <!-- Report Type Selector -->
+        <!-- PAGE: PROMOTION REQUIREMENT -->
+        <div id="page-promosi" class="page-content space-y-8">
+            
+            <!-- Hero Banner -->
+            <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-stone-900 via-yellow-950/40 to-stone-900 border border-lssd-gold/40 p-6 sm:p-8 shadow-2xl">
+                <div class="absolute -right-12 -top-12 w-64 h-64 bg-lssd-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start sm:items-center space-x-4">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-lssd-card/90 border border-lssd-gold/60 p-2.5 flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <img src="assets/images/lssd-badge.png" alt="LSSD Badge" class="w-full h-full object-contain filter drop-shadow">
+                        </div>
                         <div>
-                            <label class="block text-xs font-bold text-lssd-gold uppercase tracking-wider mb-2">Pilih Jenis Laporan:</label>
-                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
-                                <button type="button" onclick="setReportType('arrest')" id="btn-type-arrest" class="report-type-btn active py-2.5 px-3 rounded-xl border border-lssd-gold bg-lssd-card text-white font-semibold transition text-left flex items-center gap-2">
-                                    <i class="fa-solid fa-handcuffs text-lssd-gold"></i> Arrest Report
-                                </button>
-                                <button type="button" onclick="setReportType('incident')" id="btn-type-incident" class="report-type-btn py-2.5 px-3 rounded-xl border border-lssd-border bg-lssd-base hover:bg-lssd-card text-slate-300 font-semibold transition text-left flex items-center gap-2">
-                                    <i class="fa-solid fa-file-lines text-blue-400"></i> Incident Report
-                                </button>
-                                <button type="button" onclick="setReportType('traffic')" id="btn-type-traffic" class="report-type-btn py-2.5 px-3 rounded-xl border border-lssd-border bg-lssd-base hover:bg-lssd-card text-slate-300 font-semibold transition text-left flex items-center gap-2">
-                                    <i class="fa-solid fa-car-burst text-emerald-400"></i> Traffic Collision
-                                </button>
-                                <button type="button" onclick="setReportType('force')" id="btn-type-force" class="report-type-btn py-2.5 px-3 rounded-xl border border-lssd-border bg-lssd-base hover:bg-lssd-card text-slate-300 font-semibold transition text-left flex items-center gap-2">
-                                    <i class="fa-solid fa-burst text-rose-400"></i> Use of Force
-                                </button>
-                                <button type="button" onclick="setReportType('pursuit')" id="btn-type-pursuit" class="report-type-btn py-2.5 px-3 rounded-xl border border-lssd-border bg-lssd-base hover:bg-lssd-card text-slate-300 font-semibold transition text-left flex items-center gap-2">
-                                    <i class="fa-solid fa-gauge-high text-amber-400"></i> Pursuit Report
-                                </button>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-lssd-gold/20 text-lssd-gold border border-lssd-gold/40 uppercase tracking-widest">
+                                    Human Resources Division
+                                </span>
+                                <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                                    Official Directive &bull; Nusa V
+                                </span>
                             </div>
+                            <h2 class="text-2xl sm:text-3xl font-black text-white tracking-wide">PROMOTION REQUIREMENT</h2>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                                Standar persyaratan resmi kenaikan jenjang pangkat lini lapangan bagi personel <b>Los Santos County Sheriff's Department</b> menuju <b>Deputy Sheriff Bonus I</b> dan <b>Deputy Sheriff Bonus II</b>.
+                            </p>
                         </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-2.5 flex-shrink-0">
+                        <button onclick="scrollToElement('comparisonTable')" class="px-4 py-2.5 bg-lssd-gold hover:bg-lssd-goldHover text-lssd-base font-bold text-xs rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-table-list"></i> Matriks Perbandingan
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-                        <!-- Officer Information -->
-                        <div class="bg-lssd-base p-4 rounded-xl border border-lssd-border space-y-3">
-                            <h4 class="text-xs font-bold text-white flex items-center justify-between">
-                                <span><i class="fa-solid fa-id-card text-lssd-gold mr-1.5"></i> Identitas Petugas Pelapor</span>
-                                <span class="text-[10px] text-slate-400 font-mono">Auto-sync dari profil</span>
-                            </h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Nama Deputy:</label>
-                                    <input type="text" id="repOfficerName" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Nomor Badge:</label>
-                                    <input type="text" id="repOfficerBadge" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Pangkat:</label>
-                                    <input type="text" id="repOfficerRank" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Unit Callsign:</label>
-                                    <input type="text" id="repOfficerCallsign" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                            </div>
-                        </div>
+            <!-- Philosophy & HR Policy Notice -->
+            <div class="p-5 rounded-2xl bg-lssd-card/60 border border-lssd-border/80 text-xs text-slate-300 leading-relaxed space-y-2">
+                <div class="flex items-center gap-2 text-lssd-gold font-bold text-sm">
+                    <i class="fa-solid fa-graduation-cap"></i> Filosofi Pengembangan Karier LSSD
+                </div>
+                <p>
+                    Kenaikan jenjang pangkat di lingkungan <b>Los Santos County Sheriff's Department</b> tidak semata-mata diukur dari masa dinas (*time in service*), melainkan penguasaan operasional taktis, kepatuhan hierarki (*Chain of Command*), kedewasaan dalam komunikasi radio, serta pembuktian kemampuan kepemimpinan lapangan saat menjabat sebagai <b>Incident Commander (IC)</b> pada situasi berisiko tinggi.
+                </p>
+                <p class="text-[11px] text-slate-400">
+                    <i class="fa-solid fa-circle-info text-amber-400 mr-1"></i> Seluruh calon deputi yang mengajukan permohonan promosi wajib melewati verifikasi berkas oleh <b>Human Resources Division</b> dan persetujuan <b>Supervisory Board / Sheriff Command Staff</b>.
+                </p>
+            </div>
 
-                        <!-- Incident Details -->
-                        <div class="bg-lssd-base p-4 rounded-xl border border-lssd-border space-y-3 text-xs">
-                            <h4 class="font-bold text-white"><i class="fa-solid fa-location-dot text-rose-400 mr-1.5"></i> Informasi Insiden</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Waktu / Tanggal:</label>
-                                    <input type="text" id="repDateTime" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
+            <!-- Two Main Slides Cards Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- CARD 1: DEPUTY SHERIFF BONUS I -->
+                <div class="rounded-2xl border-2 border-emerald-500/50 bg-gradient-to-b from-[#2a241b] via-[#1f1b14] to-lssd-dark shadow-2xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -right-16 -top-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div>
+                        <!-- Slide Top Header -->
+                        <div class="flex items-center justify-between border-b border-amber-600/30 pb-4 mb-5">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-950/70 border border-amber-500/50 flex items-center justify-center text-amber-400 text-xl shadow-inner">
+                                    <i class="fa-solid fa-user-shield"></i>
                                 </div>
                                 <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Lokasi TKP:</label>
-                                    <input type="text" id="repLocation" placeholder="Contoh: Route 68, Harmony" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Kode Panggilan / Insiden:</label>
-                                    <input type="text" id="repCallCode" placeholder="Contoh: 10-31B / 10-57" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Unit Cadangan / Backup:</label>
-                                    <input type="text" id="repBackupUnits" placeholder="Contoh: ALCO-02, HAWK-01" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
+                                    <p class="text-[10px] uppercase font-mono tracking-widest text-amber-400 font-bold">Standard Requirement</p>
+                                    <h3 class="text-xl sm:text-2xl font-serif font-bold text-white tracking-wide">DEPUTY SHERIFF BONUS I</h3>
                                 </div>
                             </div>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-emerald-950/80 text-emerald-300 border border-emerald-500/40">
+                                FTO ELIGIBLE
+                            </span>
                         </div>
 
-                        <!-- Suspect / Persons Involved -->
-                        <div class="bg-lssd-base p-4 rounded-xl border border-lssd-border space-y-3 text-xs">
-                            <h4 class="font-bold text-white"><i class="fa-solid fa-users text-amber-400 mr-1.5"></i> Subjek / Pelaku yang Terlibat</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- Role Scope Sub-badge -->
+                        <div class="mb-5 bg-lssd-card/80 p-3 rounded-xl border border-lssd-border text-[11px] text-slate-300 flex items-center justify-between">
+                            <span><b>Target Posisi:</b> Field Training Officer (FTO) &bull; Line Senior</span>
+                            <span class="font-mono text-amber-400">DS-II Paygrade</span>
+                        </div>
+
+                        <!-- Requirements List -->
+                        <div class="space-y-3.5 text-xs">
+                            
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
                                 <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Nama Tersangka / Korban:</label>
-                                    <input type="text" id="repSuspectName" placeholder="Contoh: John Doe" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Tuduhan / Pelanggaran (Charges):</label>
-                                    <input type="text" id="repCharges" placeholder="Contoh: Armed Robbery, Evading LEO" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Status Tindakan:</label>
-                                    <select id="repActionStatus" onchange="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
-                                        <option value="Booked into County Detention">Booked into County Detention (Dipenjara)</option>
-                                        <option value="Citation Issued">Citation Issued (Dikenakan Tilang)</option>
-                                        <option value="Verbal Warning Given">Verbal Warning Given (Peringatan)</option>
-                                        <option value="Hospitalized / Transported by EMS">Hospitalized / Transported by EMS</option>
-                                        <option value="Referred to Detective Division">Referred to Detective Division</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="block text-[11px] text-slate-400 mb-1">Barang Bukti yang Diamankan:</label>
-                                    <input type="text" id="repEvidence" placeholder="Contoh: 1x Pistol Combat, $5,000 Cash" oninput="generateReports()" class="w-full bg-lssd-card border border-lssd-border rounded-lg px-3 py-1.5 text-white focus:border-lssd-gold focus:outline-none">
+                                    <strong class="text-white block font-sans">Understand the implementation of 10-Codes</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Memahami implementasi praktis seluruh 10-Codes (10-1 s/d 10-99) dalam patroli harian tanpa jeda keraguan.
+                                    </span>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Incident Narrative -->
-                        <div class="space-y-2 text-xs">
-                            <label class="block font-bold text-white"><i class="fa-solid fa-pen-nib text-lssd-gold mr-1.5"></i> Narasi Kronologis Laporan (Incident Narrative):</label>
-                            <textarea id="repNarrative" rows="5" oninput="generateReports()" placeholder="Tuliskan kronologi kejadian secara objektif dan lengkap (waktu, tindakan petugas, peringatan verbal, use of force, barang bukti)..." class="w-full bg-lssd-base border border-lssd-border rounded-xl p-3 text-white focus:border-lssd-gold focus:outline-none leading-relaxed"></textarea>
-                        </div>
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">Radio Behavior</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Etika dan tata krama transmisi radio: intonasi tenang, singkat, padat, tidak memotong transmisi darurat (Code-0 / 10-99), serta menjaga disiplin frekuensi.
+                                    </span>
+                                </div>
+                            </div>
 
-                        <div class="flex items-center justify-between pt-2">
-                            <button type="button" onclick="resetReportForm()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-semibold transition">
-                                <i class="fa-solid fa-rotate-left mr-1.5"></i> Reset Form
-                            </button>
-                            <button type="button" onclick="fillExampleReport()" class="px-4 py-2 bg-lssd-card hover:bg-lssd-cardHover border border-lssd-border hover:border-lssd-gold text-slate-200 rounded-lg text-xs font-semibold transition">
-                                <i class="fa-solid fa-wand-magic-sparkles mr-1.5 text-lssd-gold"></i> Isi Contoh Otomatis
-                            </button>
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">Chain of Command</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Kepatuhan garis instruksi komando departemen: pelaporan berjenjang melalui Supervisor lini sebelum eskalasi ke Command Staff.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">Call Sign</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Penggunaan callsign dinas yang tertib dan presisi sesuai stasiun dan jenis unit penugasan (ALCO, CHARLIE, RAPTOR, dsb.).
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">Understanding parts of the Penal Code (31B - 71A - CODE-0)</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Menguasai pasal-pasal kunci dalam Penal Code San Andreas:
+                                        <span class="block mt-1 font-mono text-[10px] text-amber-300">
+                                            &bull; 31B: Robbery Store (Perampokan Minimarket / Retail)<br>
+                                            &bull; 71A: Firing at Police Officer / Assault on Peace Officer<br>
+                                            &bull; CODE-0: Officer Down / Urgent Life-Threatening Backup
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">One-on-One Situation Line-up</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Memahami formasi dan aturan Standardized Initial Response Procedure (1-on-1 Situation), pembatasan kuota unit, izin supervisor untuk split unit, dan Primary unit sesuai kelas kendaraan.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-2.5 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans">Miranda Rights</strong>
+                                    <span class="text-slate-400 text-[11px] leading-relaxed">
+                                        Kemampuan menghafal dan membacakan Miranda Rights secara lugas dan sempurna saat penangkapan sebelum interogasi resmi.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-amber-950/30 p-2.5 rounded-lg border border-amber-500/30">
+                                <i class="fa-solid fa-star text-amber-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-amber-300 block font-sans">Took Incident Commander for 31B Situation (1x)</strong>
+                                    <span class="text-slate-300 text-[11px] leading-relaxed">
+                                        Telah memegang dan memimpin penanganan situasi perampokan toko <b>10-31B</b> sebagai <b>Incident Commander (1x)</b> dengan laporan insiden (*Incident Report*) yang detail dan presisi ter-log di MDT.
+                                    </span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <!-- RIGHT COLUMN: LIVE OUTPUT & COPY (5 COLS) -->
-                    <div class="lg:col-span-5 space-y-4 sticky top-24">
-                        
-                        <div class="bg-lssd-dark rounded-2xl p-5 border border-lssd-border shadow-2xl">
-                            <div class="flex items-center justify-between mb-4">
+                    <!-- Slide Footer Sign-off -->
+                    <div class="pt-6 mt-6 border-t border-amber-600/30 flex items-center justify-between text-[10px] text-amber-200/70 font-serif">
+                        <span>Authored by the Human Resources Division<br>Los Santos Sheriff's Dept.</span>
+                        <div class="w-8 h-8 rounded-full border border-amber-500/40 p-1 flex items-center justify-center bg-black/40">
+                            <img src="assets/images/lssd-badge.png" alt="Seal" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: DEPUTY SHERIFF BONUS II -->
+                <div class="rounded-2xl border-2 border-amber-500/50 bg-gradient-to-b from-[#2a241b] via-[#1f1b14] to-lssd-dark shadow-2xl p-6 sm:p-7 relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -right-16 -top-16 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div>
+                        <!-- Slide Top Header -->
+                        <div class="flex items-center justify-between border-b border-amber-600/30 pb-4 mb-5">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 rounded-xl bg-amber-950/70 border border-amber-500/50 flex items-center justify-center text-amber-400 text-xl shadow-inner">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
                                 <div>
-                                    <h3 class="text-sm font-bold text-white flex items-center gap-1.5">
-                                        <i class="fa-solid fa-code text-lssd-gold"></i> Format Laporan Terintegrasi
-                                    </h3>
-                                    <span class="text-[10px] text-slate-400">Pilih format untuk disalin ke forum atau Discord</span>
-                                </div>
-                                <div class="flex items-center bg-lssd-base rounded-lg p-0.5 border border-lssd-border">
-                                    <button type="button" onclick="switchOutputFormat('bbcode')" id="btn-format-bbcode" class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-lssd-gold text-lssd-base transition">BBCode</button>
-                                    <button type="button" onclick="switchOutputFormat('discord')" id="btn-format-discord" class="px-2.5 py-1 text-[11px] font-bold rounded-md text-slate-400 hover:text-white transition">Discord</button>
+                                    <p class="text-[10px] uppercase font-mono tracking-widest text-amber-400 font-bold">Advanced Requirement</p>
+                                    <h3 class="text-xl sm:text-2xl font-serif font-bold text-white tracking-wide">DEPUTY SHERIFF BONUS II</h3>
                                 </div>
                             </div>
-
-                            <!-- Live Output Textarea -->
-                            <div class="relative">
-                                <textarea id="reportOutput" readonly rows="16" class="w-full bg-lssd-base font-mono text-[11px] text-slate-200 p-3.5 rounded-xl border border-lssd-border focus:outline-none resize-none leading-relaxed select-all"></textarea>
-                            </div>
-
-                            <!-- Action Buttons -->
-                            <div class="mt-4 flex items-center gap-3">
-                                <button type="button" onclick="copyReportOutput()" class="flex-1 py-2.5 bg-lssd-gold hover:bg-lssd-goldHover text-lssd-base font-bold rounded-xl text-xs transition shadow-lg flex items-center justify-center gap-2">
-                                    <i class="fa-regular fa-copy text-sm"></i> Salin Laporan ke Clipboard
-                                </button>
-                            </div>
+                            <span class="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-amber-950/80 text-amber-300 border border-amber-500/40">
+                                MASTER FTO
+                            </span>
                         </div>
 
-                        <!-- Tips Box -->
-                        <div class="bg-lssd-card/60 p-4 rounded-xl border border-lssd-border text-xs text-slate-300 space-y-1.5">
-                            <b class="text-lssd-gold block"><i class="fa-solid fa-lightbulb mr-1"></i> Standar Pembuatan Laporan:</b>
-                            <p class="text-[11px] text-slate-400">
-                                Berdasarkan <b>Section 2-06/030.20</b>, setiap laporan wajib dibuat dengan informasi yang <b>akurat, objektif, lengkap, dan berdasarkan kejadian nyata</b> tanpa opini pribadi untuk dimasukkan ke sistem Mobile Database Terminal.
-                            </p>
+                        <!-- Role Scope Sub-badge -->
+                        <div class="mb-5 bg-lssd-card/80 p-3 rounded-xl border border-lssd-border text-[11px] text-slate-300 flex items-center justify-between">
+                            <span><b>Target Posisi:</b> Master Field Training Officer &bull; Acting Field Supervisor</span>
+                            <span class="font-mono text-amber-400">DS-III Paygrade</span>
+                        </div>
+
+                        <!-- Requirements List -->
+                        <div class="space-y-4 text-xs">
+                            
+                            <div class="flex items-start space-x-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans text-sm">Pursuit Updating Behavior</strong>
+                                    <span class="text-slate-300 text-[11px] leading-relaxed mt-1 block">
+                                        Kemampuan memberikan <b>Radio Callouts</b> pembaruan pengejaran secara real-time, tenang, dan terstruktur tanpa jeda. Mencakup: nama jalan, arah mata angin (Heading N/S/E/W), kecepatan, ciri khas & plat nomor kendaraan tersangka, pelanggaran lalu lintas berat, dan arah pelarian.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans text-sm">Traffic Stop and Felony Stop Procedure</strong>
+                                    <span class="text-slate-300 text-[11px] leading-relaxed mt-1 block">
+                                        Penguasaan total terhadap:
+                                        <span class="block mt-1 font-mono text-[10px] text-amber-300">
+                                            &bull; Unknown Risk Traffic Stop: 7 langkah pemberhentian aman, sentuhan lampu belakang, dan pendekatan sudut aman.<br>
+                                            &bull; High-Risk / Felony Stop (10-80): Penempatan formasi V atau offset, proteksi balistik pintu patroli, instruksi verbal tegas, pemborgolan terproteksi, dan clearing kendaraan.
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                <i class="fa-solid fa-circle-check text-amber-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block font-sans text-sm">Pursuit Tactics and PIT Maneuver Procedure</strong>
+                                    <span class="text-slate-300 text-[11px] leading-relaxed mt-1 block">
+                                        Penguasaan taktik pengejaran dinamis: penentuan posisi Primary/Secondary, formasi flank Interceptor, serta eksekusi <b>PIT Maneuver</b> secara sah:
+                                        <span class="block mt-1 font-mono text-[10px] text-amber-300">
+                                            &bull; Wajib mengantongi otorisasi dari Supervisor / Incident Commander.<br>
+                                            &bull; Kecepatan terkontrol (&le; 50-60 MPH), area lapang bebas pejalan kaki.<br>
+                                            &bull; Koordinasi Rolling Block, Box-in, dan Spike Strips.
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3 bg-amber-950/40 p-3 rounded-lg border border-amber-500/40">
+                                <i class="fa-solid fa-star text-amber-400 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <strong class="text-amber-300 block font-sans text-sm">Took Incident Commander for 90 Situation (1x)</strong>
+                                    <span class="text-slate-200 text-[11px] leading-relaxed mt-1 block">
+                                        Telah memegang komando dan memimpin penanganan perampokan bank / major incident <b>10-90</b> (Fleeca, Blaine County, atau Vangelico) sebagai <b>Incident Commander (1x)</b> dengan pelaporan investigasi insiden (*Detailed & Precise Incident Report*) yang terverifikasi dan tercatat resmi di MDT.
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide Footer Sign-off -->
+                    <div class="pt-6 mt-6 border-t border-amber-600/30 flex items-center justify-between text-[10px] text-amber-200/70 font-serif">
+                        <span>Authored by the Human Resources Division<br>Los Santos Sheriff's Dept.</span>
+                        <div class="w-8 h-8 rounded-full border border-amber-500/40 p-1 flex items-center justify-center bg-black/40">
+                            <img src="assets/images/lssd-badge.png" alt="Seal" class="w-full h-full object-contain">
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- Comparison Table: Bonus I vs Bonus II -->
+            <div id="comparisonTable" class="p-6 rounded-2xl bg-lssd-card border border-lssd-border space-y-4">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-table-list text-lssd-gold"></i> Perbandingan Kewenangan & Kualifikasi
+                    </h4>
+                    <span class="text-[10px] text-slate-400 font-mono">HR-LSSD Reference</span>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-lssd-dark text-slate-300 border-b border-lssd-border font-mono text-[11px]">
+                                <th class="p-3">Aspek Penilaian</th>
+                                <th class="p-3 text-emerald-400">Deputy Sheriff Bonus I</th>
+                                <th class="p-3 text-amber-400">Deputy Sheriff Bonus II</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-lssd-border text-slate-300">
+                            <tr class="hover:bg-lssd-dark/40">
+                                <td class="p-3 font-semibold text-white">Peran Penugasan Utama</td>
+                                <td class="p-3">Line Senior &bull; Field Training Officer (FTO)</td>
+                                <td class="p-3">Master FTO &bull; Acting Field Supervisor</td>
+                            </tr>
+                            <tr class="hover:bg-lssd-dark/40">
+                                <td class="p-3 font-semibold text-white">Syarat Pengalaman IC</td>
+                                <td class="p-3 font-mono text-emerald-300">1x IC pada Situasi 10-31B (Store Robbery)</td>
+                                <td class="p-3 font-mono text-amber-300">1x IC pada Situasi 10-90 (Bank Robbery)</td>
+                            </tr>
+                            <tr class="hover:bg-lssd-dark/40">
+                                <td class="p-3 font-semibold text-white">Kewenangan Senjata Tambahan</td>
+                                <td class="p-3">Class 2 (H&K MP5, Tactical SMG) + Macro Scope + Ext. SMG Ammo</td>
+                                <td class="p-3">Class 3 (M4A4, AR-15, Shotgun) + Medium Scope + Ext. Rifle Ammo</td>
+                            </tr>
+                            <tr class="hover:bg-lssd-dark/40">
+                                <td class="p-3 font-semibold text-white">Kewenangan Taktis Khusus</td>
+                                <td class="p-3">Pembimbing Trainee, Otorisasi Patroli Solo</td>
+                                <td class="p-3">Pengeksekusi PIT Maneuver, Komandan Lapangan Sementara</td>
+                            </tr>
+                            <tr class="hover:bg-lssd-dark/40">
+                                <td class="p-3 font-semibold text-white">Standar Pelaporan MDT</td>
+                                <td class="p-3">Laporan Insiden Toko & Arrest Report detail</td>
+                                <td class="p-3">Laporan Major Crime, Pursuit & PIT Report presisi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!-- /PAGE: PROMOTION REQUIREMENT -->
 
 
             <!-- 10. DOKUMEN KONTROL & KREDIT -->
@@ -3307,17 +3863,18 @@
             'beranda': { title: 'Beranda & Gambaran', icon: 'fa-house-chimney' },
             'radio': { title: 'Komunikasi & 10-Codes', icon: 'fa-walkie-talkie' },
             'taktis': { title: 'SOP & Prosedur Taktis', icon: 'fa-shield-halved' },
+            'response': { title: 'Initial Response Procedure (1-on-1)', icon: 'fa-layer-group' },
             'weapon': { title: 'Weapon Classification & Authority', icon: 'fa-gun' },
             'ic': { title: 'Incident Command & Supervisi', icon: 'fa-sitemap' },
             'fleet': { title: 'Fleet, Kendaraan & Seragam', icon: 'fa-car-side' },
             'investigasi': { title: 'Investigasi & Internal', icon: 'fa-magnifying-glass-chart' },
             'rules': { title: 'Policy & Code of Conduct', icon: 'fa-scale-balanced' },
             'struktur': { title: 'Pangkat & Organisasi', icon: 'fa-ranking-star' },
-            'laporan': { title: 'Generator Laporan Patroli', icon: 'fa-file-signature' },
+            'promosi': { title: 'Promotion Requirement', icon: 'fa-graduation-cap' },
             'kredit': { title: 'Dokumen Kontrol & Kredit', icon: 'fa-award' }
         };
 
-        const pageOrder = ['beranda', 'radio', 'taktis', 'weapon', 'ic', 'fleet', 'investigasi', 'rules', 'struktur', 'laporan', 'kredit'];
+        const pageOrder = ['beranda', 'radio', 'taktis', 'response', 'weapon', 'ic', 'fleet', 'investigasi', 'rules', 'struktur', 'promosi', 'kredit'];
 
         // Live Real-Time Digital Clock
         function updateClock() {
@@ -3708,170 +4265,128 @@
             localStorage.setItem('lssd_officer_profile', JSON.stringify(data));
             loadProfile();
             closeProfileModal();
-            generateReports();
             showToast('Profil Deputy berhasil diperbarui!');
         }
 
-        // Patrol Report Generator Logic
-        let activeReportType = 'arrest';
-        let activeReportFormat = 'bbcode';
+        // Initial Response Scenario Calculator
+        function calculateScenarioUnits() {
+            const selectEl = document.getElementById('quickScenarioSelect');
+            if (!selectEl) return;
+            const val = selectEl.value;
+            const badge = document.getElementById('quickMaxBadge');
+            const chips = document.getElementById('quickUnitChips');
+            const notes = document.getElementById('quickNotesText');
+            if (!badge || !chips || !notes) return;
 
-        function setReportType(type) {
-            activeReportType = type;
-            document.querySelectorAll('.report-type-btn').forEach(btn => {
-                btn.classList.remove('border-lssd-gold', 'bg-lssd-card', 'text-white');
-                btn.classList.add('border-lssd-border', 'bg-lssd-base', 'text-slate-300');
-            });
-            const activeBtn = document.getElementById('btn-type-' + type);
-            if (activeBtn) {
-                activeBtn.classList.remove('border-lssd-border', 'bg-lssd-base', 'text-slate-300');
-                activeBtn.classList.add('border-lssd-gold', 'bg-lssd-card', 'text-white');
-            }
-            generateReports();
-        }
-
-        function switchOutputFormat(fmt) {
-            activeReportFormat = fmt;
-            const btnBb = document.getElementById('btn-format-bbcode');
-            const btnDc = document.getElementById('btn-format-discord');
-            if (fmt === 'bbcode') {
-                btnBb.className = 'px-2.5 py-1 text-[11px] font-bold rounded-md bg-lssd-gold text-lssd-base transition';
-                btnDc.className = 'px-2.5 py-1 text-[11px] font-bold rounded-md text-slate-400 hover:text-white transition';
-            } else {
-                btnDc.className = 'px-2.5 py-1 text-[11px] font-bold rounded-md bg-lssd-gold text-lssd-base transition';
-                btnBb.className = 'px-2.5 py-1 text-[11px] font-bold rounded-md text-slate-400 hover:text-white transition';
-            }
-            generateReports();
-        }
-
-        function generateReports() {
-            const name = document.getElementById('repOfficerName')?.value.trim() || '[NAMA DEPUTY]';
-            const badge = document.getElementById('repOfficerBadge')?.value.trim() || '[#BADGE]';
-            const rank = document.getElementById('repOfficerRank')?.value.trim() || '[PANGKAT]';
-            const callsign = document.getElementById('repOfficerCallsign')?.value.trim() || '[CALLSIGN]';
-            const datetime = document.getElementById('repDateTime')?.value.trim() || new Date().toLocaleString('id-ID');
-            const location = document.getElementById('repLocation')?.value.trim() || '[LOKASI TKP]';
-            const callCode = document.getElementById('repCallCode')?.value.trim() || '[KODE PANGGILAN]';
-            const backup = document.getElementById('repBackupUnits')?.value.trim() || 'None';
-            const suspect = document.getElementById('repSuspectName')?.value.trim() || 'N/A';
-            const charges = document.getElementById('repCharges')?.value.trim() || 'N/A';
-            const status = document.getElementById('repActionStatus')?.value || 'N/A';
-            const evidence = document.getElementById('repEvidence')?.value.trim() || 'None';
-            const narrative = document.getElementById('repNarrative')?.value.trim() || '[Kronologi dan rincian kejadian belum diisi...]';
-
-            const reportLabels = {
-                'arrest': 'ARREST REPORT',
-                'incident': 'INCIDENT REPORT',
-                'traffic': 'TRAFFIC COLLISION REPORT',
-                'force': 'USE OF FORCE REPORT',
-                'pursuit': 'PURSUIT REPORT'
+            const scenarios = {
+                '1034': {
+                    max: 'MAX 3 UNIT',
+                    badgeClass: 'h-full bg-emerald-950/60 border border-emerald-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-emerald-300 text-sm',
+                    chips: [
+                        { label: '2 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' }
+                    ],
+                    notes: '10-34 & 31A: Aktivitas Ilegal & Perampokan Rumah. Fokus pada pembatasan area perimeter dan koordinasi verbal cepat.'
+                },
+                '1060a': {
+                    max: 'MAX 4 UNIT',
+                    badgeClass: 'h-full bg-emerald-950/60 border border-emerald-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-emerald-300 text-sm',
+                    chips: [
+                        { label: '3 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' }
+                    ],
+                    notes: '10-60A: Pencurian Kendaraan (Car Stealing). Jika suspect menggunakan kendaraan Class B/C/D, Patrol Unit boleh menjadi Primary Unit.'
+                },
+                '1031b': {
+                    max: 'MAX 6 UNIT',
+                    badgeClass: 'h-full bg-emerald-950/60 border border-emerald-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-emerald-300 text-sm',
+                    chips: [
+                        { label: '2 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '2 Interceptor / Speed', color: 'border-yellow-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' },
+                        { label: 'Helikopter [Opsional]', color: 'border-purple-500/30' }
+                    ],
+                    notes: '10-31B: Perampokan Toko / Minimarket. Helikopter opsional bila armada udara tersedia untuk visualisasi jalur pelarian tersangka.'
+                },
+                'fleeca1': {
+                    max: 'MAX 7 UNIT',
+                    badgeClass: 'h-full bg-amber-950/60 border border-amber-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-amber-300 text-sm',
+                    chips: [
+                        { label: '3 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '2 Interceptor / Speed', color: 'border-yellow-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' },
+                        { label: '1 Helikopter (Air Support)', color: 'border-purple-500/30' }
+                    ],
+                    notes: '10-90 Fleeca Bank (1 Suspect Vehicle): Penanganan 1 kendaraan suspect. Unit udara menjaga line-of-sight.'
+                },
+                'fleeca2': {
+                    max: 'MAX 7 UNIT',
+                    badgeClass: 'h-full bg-amber-950/60 border border-amber-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-amber-300 text-sm',
+                    chips: [
+                        { label: '1 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '4 Interceptor / Speed', color: 'border-yellow-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' },
+                        { label: '1 Helikopter (Air Support)', color: 'border-purple-500/30' }
+                    ],
+                    notes: '10-90 Fleeca Bank (2+ Suspect Vehicles): Penambahan 4 unit Interceptor untuk kesiapan penanganan pengejaran terpisah (Split Pursuit).'
+                },
+                'blaine': {
+                    max: 'MAX 9 UNIT',
+                    badgeClass: 'h-full bg-rose-950/60 border border-rose-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-rose-300 text-sm',
+                    chips: [
+                        { label: '2 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '4 Interceptor / Speed', color: 'border-yellow-500/30' },
+                        { label: '1 Tactical / SWAT / SEB', color: 'border-rose-500/40' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' },
+                        { label: '1 Helikopter (Air Support)', color: 'border-purple-500/30' }
+                    ],
+                    notes: '10-90 Blaine County Bank: Wajib menyertakan 1 unit Taktis SEB karena potensi perlawanan senjata berat di yurisdiksi county.'
+                },
+                'vangelico': {
+                    max: 'MAX 8 UNIT',
+                    badgeClass: 'h-full bg-amber-950/60 border border-amber-500/40 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-amber-300 text-sm',
+                    chips: [
+                        { label: '2 Patrol / Basic', color: 'border-blue-500/30' },
+                        { label: '4 Interceptor / Speed', color: 'border-yellow-500/30' },
+                        { label: '1 Motorcycle', color: 'border-cyan-500/30' },
+                        { label: '1 Helikopter (Air Support)', color: 'border-purple-500/30' }
+                    ],
+                    notes: '10-90 Jewelry / Vangelico: Respon perimeter ketat di pusat kota dengan 4 unit interceptor untuk menghadapi jalur kabur cepat.'
+                },
+                'bobcat': {
+                    max: 'NO LIMIT &bull; DISKRESI IC',
+                    badgeClass: 'h-full bg-red-950/70 border border-red-500/50 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-red-300 text-sm',
+                    chips: [
+                        { label: 'Tidak Ada Batasan Kuota', color: 'border-red-500/40' },
+                        { label: 'Diskresi Penuh Incident Commander', color: 'border-amber-500/40' },
+                        { label: 'Full SEB & Air Unit Deployment', color: 'border-rose-500/40' }
+                    ],
+                    notes: '10-90 Bobcat Robbery: Perampokan fasilitas militer/keamanan bersenjata berat. Seluruh komposisi ditentukan oleh Incident Commander di lapangan.'
+                },
+                'pacific': {
+                    max: 'NO LIMIT &bull; DISKRESI IC',
+                    badgeClass: 'h-full bg-red-950/70 border border-red-500/50 rounded-xl px-4 py-2 flex items-center justify-center font-mono font-bold text-red-300 text-sm',
+                    chips: [
+                        { label: 'Tidak Ada Batasan Kuota', color: 'border-red-500/40' },
+                        { label: 'Diskresi Penuh Incident Commander', color: 'border-amber-500/40' },
+                        { label: 'Citywide Tactical Alert Authorized', color: 'border-rose-500/40' }
+                    ],
+                    notes: '10-90 Pacific Bank Robbery: Kejahatan perbankan pusat tertinggi. Wewenang penuh berada di tangan IC untuk mengerahkan seluruh kekuatan dinas gabungan.'
+                }
             };
-            const title = reportLabels[activeReportType] || 'OFFICIAL REPORT';
 
-            let output = '';
-
-            if (activeReportFormat === 'bbcode') {
-                output = `[div align="center"][b][size=14]LOS SANTOS COUNTY SHERIFF'S DEPARTMENT[/size][/b]
-[size=12][color=#f59e0b]${title}[/color][/size]
-[size=10]Division: Patrol Operations | Status: CONFIDENTIAL & RECORDED[/size][/div]
-[hr]
-[b]I. REPORTING OFFICER DETAILS[/b]
-• [b]Deputy Name:[/b] ${name}
-• [b]Badge Number:[/b] ${badge}
-• [b]Rank:[/b] ${rank}
-• [b]Unit Callsign:[/b] ${callsign}
-
-[b]II. INCIDENT OVERVIEW[/b]
-• [b]Date & Time:[/b] ${datetime}
-• [b]Location (TKP):[/b] ${location}
-• [b]Call / Incident Code:[/b] ${callCode}
-• [b]Responding Backup Units:[/b] ${backup}
-
-[b]III. SUBJECT & CHARGES INVOLVED[/b]
-• [b]Person(s) Involved:[/b] ${suspect}
-• [b]Applicable Charges:[/b] ${charges}
-• [b]Action Disposition:[/b] ${status}
-• [b]Seized Evidence Log:[/b] ${evidence}
-
-[b]IV. CHRONOLOGICAL NARRATIVE (INVESTIGATION SUMMARY)[/b]
-${narrative}
-[hr]
-[size=9][i]Filed via LSSD Mobile Database Terminal (MDT) System &bull; LSSD-DOC-SOP-00226[/i][/size]`;
-            } else {
-                output = `# 🛡️ LOS SANTOS COUNTY SHERIFF'S DEPARTMENT
-### **${title}**
-*Patrol Operations Division &bull; Classification: Department Internal Use*
-────────────────────────────────────────
-**👮 I. REPORTING OFFICER DETAILS**
-- **Deputy Name:** ${name}
-- **Badge Number:** ${badge}
-- **Rank:** ${rank}
-- **Unit Callsign:** ${callsign}
-
-**📍 II. INCIDENT OVERVIEW**
-- **Date & Time:** ${datetime}
-- **Location:** ${location}
-- **Call Code:** ${callCode}
-- **Backup Units:** ${backup}
-
-**👤 III. SUBJECT & CHARGES INVOLVED**
-- **Suspect / Victim:** ${suspect}
-- **Charges:** ${charges}
-- **Disposition:** ${status}
-- **Seized Evidence:** ${evidence}
-
-**📝 IV. CHRONOLOGICAL NARRATIVE**
-> ${narrative.split('\n').join('\n> ')}
-
-────────────────────────────────────────
-*Official LSSD Incident Record &bull; Server Nusa V*`;
-            }
-
-            const outEl = document.getElementById('reportOutput');
-            if (outEl) outEl.value = output;
-        }
-
-        function copyReportOutput() {
-            const outEl = document.getElementById('reportOutput');
-            if (outEl && outEl.value) {
-                copyText(outEl.value, 'Laporan patroli berhasil disalin!');
-            }
-        }
-
-        function resetReportForm() {
-            document.getElementById('repLocation').value = '';
-            document.getElementById('repCallCode').value = '';
-            document.getElementById('repBackupUnits').value = '';
-            document.getElementById('repSuspectName').value = '';
-            document.getElementById('repCharges').value = '';
-            document.getElementById('repEvidence').value = '';
-            document.getElementById('repNarrative').value = '';
-            loadProfile();
-            generateReports();
-            showToast('Form laporan direset', 'info');
-        }
-
-        function fillExampleReport() {
-            document.getElementById('repDateTime').value = new Date().toLocaleString('id-ID');
-            document.getElementById('repLocation').value = 'Route 68 Gas Station, Harmony, Blaine County';
-            document.getElementById('repCallCode').value = '10-31B (Robbery Store) & 10-57 (Pursuit)';
-            document.getElementById('repBackupUnits').value = 'ALCO-02, CHARLIE-01, HAWK-01';
-            document.getElementById('repSuspectName').value = 'Marcus Vance (Male / Hispanic / Black Jacket)';
-            document.getElementById('repCharges').value = 'Armed Robbery (Felony), Evading Peace Officer (Felony), Illegal Firearm Possession';
-            document.getElementById('repActionStatus').value = 'Booked into County Detention';
-            document.getElementById('repEvidence').value = '1x Combat Pistol (SN: 99482), $3,450 Cash, 1x Red Sultan (Plate: 42XYZ9)';
-            document.getElementById('repNarrative').value = 'Pada pukul 14:20 WIB, unit ALCO-01 merespons alarm darurat 10-31B di Harmony Gas Station. Setibanya di lokasi (10-23), unit mendapati satu suspect bersenjata api (10-11) melarikan diri menggunakan Red Sultan (10-60). Pengejaran aktif (10-57) dilakukan ke arah Northbound Route 68 bersama unit backup. Di Senora Fwy, suspect kehilangan kendali kendaraan dan menabrak pembatas jalan. Unit menerapkan Felony Stop (10-80), suspect mematuhi instruksi verbal dan menyerahkan diri tanpa pelepasan tembakan. Tersangka diborgol (10-95), dibacakan Miranda Rights, dan dibawa ke stasiun untuk booking.';
-            generateReports();
-            showToast('Contoh laporan terisi!');
+            const s = scenarios[val] || scenarios['1031b'];
+            badge.className = s.badgeClass;
+            badge.innerHTML = s.max;
+            chips.innerHTML = s.chips.map(c => `<span class="px-2.5 py-1 rounded bg-lssd-card border ${c.color}">${c.label}</span>`).join('');
+            notes.innerHTML = s.notes;
         }
 
         // Window Initialization
         window.addEventListener('DOMContentLoaded', () => {
             loadProfile();
-            document.getElementById('repDateTime').value = new Date().toLocaleString('id-ID');
             buildHandbookSearchIndex();
             injectSequentialNav();
-            generateReports();
         });
     </script>
 </body>
