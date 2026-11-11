@@ -2475,237 +2475,926 @@
             </div>
 
 
-            <!-- 5. FLEET, KENDARAAN & SERAGAM -->
-            <div id="page-fleet" class="page-content space-y-8">
-                
-                <!-- Section Header -->
-                <div class="bg-lssd-card border-l-4 border-indigo-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
-                    <span class="text-[10px] text-indigo-400 font-bold uppercase tracking-widest font-mono">VOLUME 3 &bull; FLEET, EQUIPMENT & UNIFORM</span>
-                    <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Otorisasi Kendaraan Dinas, Peralatan & Seragam</h2>
-                    <p class="text-xs text-slate-300 mt-1">
-                        Penggunaan armada dan perlengkapan dinas Los Santos Sheriff Department diatur secara ketat berdasarkan pangkat, penugasan khusus, dan kualifikasi sertifikasi.
-                    </p>
+        <!-- PAGE: FLEET & UNIFORM AUTHORITY -->
+        <div id="page-fleet" class="page-content space-y-8">
+            
+            <!-- Section Header -->
+            <div class="bg-lssd-card border-l-4 border-indigo-500 p-5 rounded-r-xl border border-lssd-border shadow-lg">
+                <span class="text-[10px] text-indigo-400 font-bold uppercase tracking-widest font-mono">VOLUME 3 &bull; FLEET & UNIFORM AUTHORITY</span>
+                <h2 class="text-xl sm:text-2xl font-bold text-white mt-1">Fleet & Uniform Authority</h2>
+                <p class="text-xs text-slate-300 mt-1">
+                    Penggunaan armada kendaraan dinas dan seragam resmi Los Santos County Sheriff's Department diatur secara ketat berdasarkan pangkat, penugasan khusus, dan otorisasi sertifikasi dinas.
+                </p>
+            </div>
+
+            <!-- Quick Jump Bar -->
+            <div class="flex flex-wrap gap-2 text-xs">
+                <button onclick="scrollToElement('fleetAuthoritySection')" class="px-3.5 py-2 rounded-xl bg-lssd-dark hover:bg-lssd-card border border-lssd-border text-slate-300 hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-car text-indigo-400"></i> Armada Kendaraan Dinas
+                </button>
+                <button onclick="scrollToElement('uniformDirectorySection')" class="px-3.5 py-2 rounded-xl bg-lssd-dark hover:bg-lssd-card border border-indigo-500/40 text-indigo-300 hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-indigo-400"></i> Uniform Groups (8 Kategori)
+                </button>
+                <button onclick="scrollToElement('uniformGallerySection')" class="px-3.5 py-2 rounded-xl bg-lssd-dark hover:bg-lssd-card border border-lssd-border text-slate-300 hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-shirt text-emerald-400"></i> Katalog Visual Seragam FiveM
+                </button>
+                <button onclick="scrollToElement('dutyGearSection')" class="px-3.5 py-2 rounded-xl bg-lssd-dark hover:bg-lssd-card border border-lssd-border text-slate-300 hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-toolbox text-amber-400"></i> Sabuk Sam Browne & Kebijakan Tato
+                </button>
+            </div>
+
+            <!-- 1. VEHICLE AUTHORITY MATRIX BY RANK -->
+            <div id="fleetAuthoritySection" class="bg-lssd-card rounded-2xl p-5 sm:p-7 border border-lssd-border shadow-md space-y-4">
+                <div class="flex items-center justify-between pb-3 border-b border-lssd-border">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-car-side text-indigo-400"></i> Matriks Otorisasi Kendaraan Berdasarkan Pangkat (Section 301)
+                    </h3>
+                    <span class="text-[10px] text-slate-400 font-mono">Department Fleet Order</span>
                 </div>
 
-                <!-- 1. VEHICLE AUTHORITY TABLE -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
-                        <div>
-                            <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTION 300 &bull; VEHICLE AUTHORITY</span>
-                            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                                <i class="fa-solid fa-car-side text-indigo-400"></i> Matriks Otorisasi Kendaraan Patroli
-                            </h3>
-                        </div>
-                        <span class="text-xs text-slate-400 italic">Dilarang memodifikasi kendaraan dinas tanpa otorisasi.</span>
-                    </div>
-
-                    <div class="overflow-x-auto rounded-xl border border-lssd-border">
-                        <table class="w-full text-left text-xs">
-                            <thead>
-                                <tr class="bg-lssd-card text-lssd-gold font-bold border-b border-lssd-border">
-                                    <th class="py-3 px-4 w-1/3">PANGKAT / KATEGORI</th>
-                                    <th class="py-3 px-4">KENDARAAN RESMI YANG DIIZINKAN (AUTHORIZED FLEET)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-lssd-border text-slate-200">
-                                <tr class="hover:bg-lssd-card/30 transition">
-                                    <td class="py-3 px-4 font-semibold text-slate-300 flex items-center gap-2">
-                                        <i class="fa-solid fa-graduation-cap text-slate-500"></i> Deputy Sheriff Trainee
-                                    </td>
-                                    <td class="py-3 px-4">
-                                        <span class="code-tag">&bull; Ford CVPI (FEDSIG11CVPIBB)</span>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-lssd-card/30 transition">
-                                    <td class="py-3 px-4 font-semibold text-slate-200 flex items-center gap-2">
-                                        <i class="fa-solid fa-shield text-emerald-400"></i> Deputy Sheriff
-                                    </td>
-                                    <td class="py-3 px-4 space-x-1.5 space-y-1">
-                                        <span class="code-tag">&bull; Ford CVPI (FEDSIG11CVPIBB)</span>
-                                        <span class="code-tag">&bull; Ford Explorer (FED13UTILITY)</span>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-lssd-card/30 transition">
-                                    <td class="py-3 px-4 font-semibold text-amber-300 flex items-center gap-2">
-                                        <i class="fa-solid fa-chevron-up text-amber-400"></i> Deputy Sheriff Bonus I &ndash; Sergeant
-                                    </td>
-                                    <td class="py-3 px-4 space-x-1.5 space-y-1">
-                                        <span class="code-tag">&bull; Ford CVPI (FEDSIG11CVPIBB)</span>
-                                        <span class="code-tag">&bull; Ford Explorer (FED13UTILITY)</span>
-                                        <span class="code-tag">&bull; Dodge Charger 14 (FED14SEDAN)</span>
-                                        <span class="code-tag">&bull; Dodge RAM (FEDSIG13RAMSBB)</span>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-lssd-card/30 transition">
-                                    <td class="py-3 px-4 font-semibold text-lssd-goldLight flex items-center gap-2">
-                                        <i class="fa-solid fa-bars text-lssd-gold"></i> Lieutenant &ndash; Captain
-                                    </td>
-                                    <td class="py-3 px-4 space-x-1.5 space-y-1">
-                                        <span class="code-tag">&bull; Ford CVPI</span>
-                                        <span class="code-tag">&bull; Ford Explorer</span>
-                                        <span class="code-tag">&bull; Dodge Charger 14</span>
-                                        <span class="code-tag">&bull; Dodge Charger 18 (FED18SEDAN)</span>
-                                        <span class="code-tag">&bull; Dodge RAM</span>
-                                        <span class="code-tag">&bull; Ford Mustang Dark Horse (GC24STANG)</span>
-                                    </td>
-                                </tr>
-                                <tr class="hover:bg-lssd-card/30 transition bg-indigo-950/20">
-                                    <td class="py-3 px-4 font-bold text-indigo-300 flex items-center gap-2">
-                                        <i class="fa-solid fa-star text-indigo-400"></i> Area Commander & Above
-                                    </td>
-                                    <td class="py-3 px-4 font-bold text-white">
-                                        <span class="px-2.5 py-1 rounded bg-indigo-600/40 text-indigo-200 border border-indigo-400/40">ALL FLEET (Seluruh Armada Departemen)</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 2. SPECIAL CERTIFICATIONS & SEB FLEET -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
                     
-                    <!-- Special Certification Required Fleet -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest font-mono">SPECIAL CERTIFICATION REQUIRED</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-certificate text-amber-400"></i> Kendaraan Wajib Sertifikasi Khusus
-                        </h3>
-                        <p class="text-xs text-slate-400 mb-3 leading-relaxed">
-                            Armada berikut hanya dapat dioperasikan setelah personel lulus uji pelatihan dan memegang sertifikasi resmi dari Training Bureau:
-                        </p>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-car text-amber-400"></i>
-                                <span>Dodge Challenger <b class="text-slate-400 text-[10px]">(FED20MUSCLE)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-car text-amber-400"></i>
-                                <span>Ford Mustang <b class="text-slate-400 text-[10px]">(FED18MUSCLE)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-motorcycle text-cyan-400"></i>
-                                <span>Harley Road King <b class="text-slate-400 text-[10px]">(FEDMOTOR)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-bolt text-red-400"></i>
-                                <span>Corvette <b class="text-slate-400 text-[10px]">(ZR1)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-ship text-blue-400"></i>
-                                <span>Predator Boat <b class="text-slate-400 text-[10px]">(PBOAT)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2">
-                                <i class="fa-solid fa-helicopter text-emerald-400"></i>
-                                <span>Helicopter <b class="text-slate-400 text-[10px]">(MAVERICK)</b></span>
-                            </div>
-                            <div class="bg-lssd-card p-2.5 rounded-lg border border-lssd-border flex items-center gap-2 sm:col-span-2">
-                                <i class="fa-solid fa-motorcycle text-purple-400"></i>
-                                <span>African Twin <b class="text-slate-400 text-[10px]">(MAVERICK / Off-road Motor)</b></span>
-                            </div>
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-slate-300">Deputy Trainee</h4>
+                            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Trainee</span>
                         </div>
+                        <ul class="text-[11px] text-slate-400 space-y-1">
+                            <li>&bull; Vapid Stanier (CVPI) Marked</li>
+                            <li>&bull; Wajib didampingi FTO (No Solo Patrol)</li>
+                        </ul>
                     </div>
 
-                    <!-- SEB & Detective Unmarked Fleet Policy -->
-                    <div class="bg-lssd-dark rounded-2xl p-5 sm:p-6 border border-lssd-border">
-                        <span class="text-[10px] text-rose-400 font-bold uppercase tracking-widest font-mono">SEB & DETECTIVE DIVISION</span>
-                        <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-user-secret text-rose-400"></i> Kebijakan Kendaraan SEB & Unmarked
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-emerald-400">Deputy Sheriff & Bonus I</h4>
+                            <span class="px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 text-[10px]">Patrol Deputy</span>
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; Vapid Stanier (CVPI) Marked</li>
+                            <li>&bull; Vapid Scout (SUV) Marked</li>
+                            <li>&bull; Bravado Buffalo STX (Izin Supervisor)</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-amber-400">Deputy Sheriff Bonus II (Master FTO)</h4>
+                            <span class="px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 text-[10px]">FTO Specialist</span>
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; Seluruh armada Marked Patrol</li>
+                            <li>&bull; Vapid Scout Slicktop / Unmarked</li>
+                            <li>&bull; Bravado Buffalo STX Interceptor</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-blue-400">Sergeant</h4>
+                            <span class="px-2 py-0.5 rounded bg-blue-950/60 text-blue-300 text-[10px]">Field Supervisor</span>
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; Seluruh armada Patrol & Slicktop</li>
+                            <li>&bull; Declasse Alamo Marked / Slicktop</li>
+                            <li>&bull; Unmarked Supervisor Unit (Ghost livery)</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-purple-400">Lieutenant</h4>
+                            <span class="px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 text-[10px]">Watch Commander</span>
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; Seluruh armada Supervisor & Patrol</li>
+                            <li>&bull; Unmarked Executive Unit</li>
+                            <li>&bull; Otorisasi pengeluaran Heavy Tactical Vehicle</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-3.5 rounded-xl bg-lssd-dark border border-lssd-border">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="font-bold text-lssd-gold">Captain & Area Commander+</h4>
+                            <span class="px-2 py-0.5 rounded bg-yellow-950/60 text-yellow-300 text-[10px]">Command Staff</span>
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; Akses tak terbatas seluruh armada dinas</li>
+                            <li>&bull; Executive Unmarked & High Command Transport</li>
+                            <li>&bull; Otorisasi Armada Udara & Khusus</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 2. SPECIAL CERTIFICATION FLEET -->
+            <div class="bg-lssd-card rounded-2xl p-5 sm:p-7 border border-lssd-border shadow-md space-y-4">
+                <div class="flex items-center justify-between pb-3 border-b border-lssd-border">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-award text-amber-400"></i> Armada Bersertifikasi Khusus & Divisi Khusus
+                    </h3>
+                    <span class="text-[10px] text-slate-400 font-mono">Special Division Authorization</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 rounded-xl bg-lssd-dark border border-lssd-border space-y-2">
+                        <div class="flex items-center gap-2 text-rose-400 font-bold">
+                            <i class="fa-solid fa-shield-virus"></i> Special Enforcement Bureau (SEB)
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; <b>Lenco BearCat:</b> Armada lapis baja taktis</li>
+                            <li>&bull; <b>Brute Insurgent / Tactical SUV:</b> Breaching & High-Risk Warrant</li>
+                            <li>&bull; <b>SuperVolito / Maverick SEB:</b> Air Extraction & Fast Rope</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-lssd-dark border border-lssd-border space-y-2">
+                        <div class="flex items-center gap-2 text-cyan-400 font-bold">
+                            <i class="fa-solid fa-motorcycle"></i> REX & Traffic Enforcement
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; <b>Western Sovereign / Winter Police Bike:</b> Unit motor patroli cepat</li>
+                            <li>&bull; <b>Vapid Dominator / Buffalo STX:</b> High-Speed Pursuit Interceptor</li>
+                            <li>&bull; Wajib sertifikasi Motor & Interceptor certified</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-lssd-dark border border-lssd-border space-y-2">
+                        <div class="flex items-center gap-2 text-purple-400 font-bold">
+                            <i class="fa-solid fa-helicopter"></i> Aero Bureau & Maritime
+                        </div>
+                        <ul class="text-[11px] text-slate-300 space-y-1">
+                            <li>&bull; <b>HAWK / AS350 Police Maverick:</b> Patroli udara FLIR & NightSun</li>
+                            <li>&bull; <b>Predator Patrol Boat:</b> Patroli perairan Alamo Sea & pesisir</li>
+                            <li>&bull; Wajib sertifikasi Pilot Penerbang Resmi LSSD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 3. UNIFORM AUTHORITY GROUP DIRECTIVE       -->
+            <!-- ========================================== -->
+            <div id="uniformDirectorySection" class="bg-lssd-card rounded-2xl p-5 sm:p-7 border border-indigo-500/40 shadow-2xl space-y-6">
+                
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-lssd-border">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 uppercase">
+                                Uniform Authority Directory
+                            </span>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                8 Official Categories
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mt-1.5 flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group text-indigo-400"></i> LSSD Uniform Authority Groups
                         </h3>
-                        <div class="space-y-3 text-xs text-slate-300">
-                            <div class="bg-lssd-card p-3.5 rounded-xl border border-rose-500/30">
-                                <strong class="text-rose-400 block mb-1">Special Enforcement Bureau (SEB):</strong>
-                                <p class="text-[11px] mb-2 leading-relaxed">
-                                    Armada resmi SEB meliputi: <b>TARV (Armored), Charger 18, Explorer, dan RAM</b>.
-                                </p>
-                                <span class="text-[10px] px-2 py-0.5 rounded bg-rose-950/60 text-rose-300 border border-rose-500/30">
-                                    Penggunaan unit Unmarked khusus saat operasi taktis atau penanganan situasi barikade.
+                        <p class="text-xs text-slate-300 mt-1">
+                            Daftar pembagian kategori seragam dinas Los Santos County Sheriff's Department. Klik pada kategori untuk langsung melihat preview visual dan kode nomor FiveM pakaian.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 8 Discord Thread Categories Grid (Exact Replication of Image 1) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                    
+                    <!-- 1. Ride Along -->
+                    <div onclick="scrollToElement('uni-ridealong')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-indigo-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-indigo-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-user-group text-slate-400 text-xs"></i> LSSD Uniform - Ride Along
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 21d ago
                                 </span>
                             </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                Seragam khusus pengamat sipil program Ride Along atau observasi lapangan resmi LSSD.
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-indigo-300">
+                            <span>4 Varian: Pria & Wanita (Front & Back)</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
 
-                            <div class="bg-lssd-card p-3.5 rounded-xl border border-purple-500/30">
-                                <strong class="text-purple-400 block mb-1">Detective Division:</strong>
-                                <p class="text-[11px] leading-relaxed">
-                                    Diberikan kewenangan penuh menggunakan kendaraan <b>Unmarked</b> untuk keperluan penyelidikan lapangan, surveilans, dan penyamaran (kecuali Certificated Fleet).
-                                </p>
+                    <!-- 2. Class A -->
+                    <div onclick="scrollToElement('uni-classa')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-amber-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-amber-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-medal text-amber-400 text-xs"></i> LSSD Uniform - CLASS A
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 21d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"This uniform is intended for formal and ceremonial events. (Please adjust the insignia according to your rank)"</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-amber-300">
+                            <span>Formal & Upacara: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Class B -->
+                    <div onclick="scrollToElement('uni-classb')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-emerald-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-emerald-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-shield-halved text-emerald-400 text-xs"></i> LSSD Uniform - CLASS B
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 21d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"For daily patrol and general duty use. (Please adjust the insignia according to your rank)"</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-emerald-300">
+                            <span>Patroli Harian Utama: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Trainee/Rooks -->
+                    <div onclick="scrollToElement('uni-trainee')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-yellow-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-yellow-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-id-badge text-yellow-400 text-xs"></i> LSSD Uniform - Trainee/Rooks
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 22d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"This uniform is worn by personnel onboarded at the LSSD who hold the rank of Deputy Trainee."</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-yellow-300">
+                            <span>Seragam Trainee: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Operation / Code 6 -->
+                    <div onclick="scrollToElement('uni-operation')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-red-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-red-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-crosshairs text-red-400 text-xs"></i> LSSD Uniform - Operation / Code 6
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 2 &bull; 22d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Zacc Hilton</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                Seragam taktis khusus operasi penyerbuan berisiko tinggi (*High-Risk Operation*) & situasi darurat Code-6.
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-red-300">
+                            <span>Tactical Combat Rig: Front & Back</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Administrative -->
+                    <div onclick="scrollToElement('uni-administrative')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-purple-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-purple-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-briefcase text-purple-400 text-xs"></i> LSSD Uniform - Administrative
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 22d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"This uniform is exclusively used by and intended for High Command, Executive Staff, and Command Personnel."</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-purple-300">
+                            <span>High Command / Exec: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 7. Jacket -->
+                    <div onclick="scrollToElement('uni-jacket')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-emerald-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-emerald-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-vest-patches text-emerald-400 text-xs"></i> LSSD Uniform - Jacket
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 22d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"This uniform is restricted to the rank of Deputy Sheriff Bonus 2 and above."</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-emerald-300">
+                            <span>Bonus 2 & Atasan: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                    <!-- 8. REX Unit -->
+                    <div onclick="scrollToElement('uni-rex')" class="p-4 rounded-xl bg-lssd-dark/90 border border-lssd-border hover:border-cyan-400/60 transition cursor-pointer group flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <h4 class="text-sm font-bold text-white group-hover:text-cyan-300 transition flex items-center gap-2">
+                                    <i class="fa-solid fa-motorcycle text-cyan-400 text-xs"></i> LSSD Uniform - REX Unit
+                                </h4>
+                                <span class="text-[10px] text-slate-500 font-mono flex items-center gap-1">
+                                    <i class="fa-solid fa-comment text-[9px]"></i> 4 &bull; 22d ago
+                                </span>
+                            </div>
+                            <p class="text-[11px] text-rose-400 font-medium">Valentine Anastacius Mildred G.</p>
+                            <p class="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                                <i>"This uniform is used when operating a motorcycle unit, and is restricted to certified operators."</i>
+                            </p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-lssd-border/60 flex items-center justify-between text-[10px] text-cyan-300">
+                            <span>Motorcycle Unit: Pria & Wanita</span>
+                            <span class="group-hover:translate-x-1 transition flex items-center gap-1">Buka Preview <i class="fa-solid fa-arrow-right text-[9px]"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- 4. VISUAL UNIFORM CATALOG & FIVEM PREVIEW  -->
+            <!-- ========================================== -->
+            <div id="uniformGallerySection" class="space-y-6">
+                
+                <div class="flex items-center justify-between pb-2 border-b border-lssd-border">
+                    <div>
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-images text-emerald-400"></i> Katalog Visual Seragam LSSD & FiveM Clothing Setup
+                        </h3>
+                        <p class="text-xs text-slate-400 mt-0.5">
+                            Klik pada gambar untuk memperbesar dan melihat seluruh angka <b>Drawable</b> serta <b>Texture</b> pada menu toko pakaian FiveM.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 1. RIDE ALONG -->
+                <div id="uni-ridealong" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800 text-slate-300 border border-slate-700">
+                                CATEGORY 01
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - Ride Along</h4>
+                            <p class="text-xs text-slate-400">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; Digunakan untuk personel/tamu dalam program observasi lapangan Ride Along.</p>
+                        </div>
+                        <!-- Gender Toggle -->
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-ridealong-m" onclick="switchUniformGender('ridealong', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-ridealong-fm" onclick="switchUniformGender('ridealong', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Male Images -->
+                    <div id="view-ridealong-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-indigo-300 font-bold block">Tampak Depan (Front) &bull; Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/ridealong_m1.png', 'LSSD Uniform - Ride Along (Male Front)', 'Periksa slot FiveM di sisi kiri layar')">
+                                <img src="assets/images/uniforms/ridealong_m1.png" alt="Ride Along Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-indigo-300 font-bold block">Tampak Belakang (Back) &bull; Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/ridealong_m2.png', 'LSSD Uniform - Ride Along (Male Back)', 'Tampilan sabuk dan perlengkapan belakang')">
+                                <img src="assets/images/uniforms/ridealong_m2.png" alt="Ride Along Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Female Images (Hidden by default) -->
+                    <div id="view-ridealong-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Depan (Front) &bull; Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/ridealong_fm1.png', 'LSSD Uniform - Ride Along (Female Front)', 'Periksa slot FiveM di sisi kiri layar')">
+                                <img src="assets/images/uniforms/ridealong_fm1.png" alt="Ride Along Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Belakang (Back) &bull; Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/ridealong_fm2.png', 'LSSD Uniform - Ride Along (Female Back)', 'Tampilan sabuk dan perlengkapan belakang')">
+                                <img src="assets/images/uniforms/ridealong_fm2.png" alt="Ride Along Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. FIELD EQUIPMENT & UNIFORM STANDARDS -->
-                <div class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border">
-                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 320 - 326</span>
-                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-vest text-emerald-400"></i> Standar Perlengkapan Lapangan & Seragam
-                    </h3>
+                <!-- 2. CLASS A -->
+                <div id="uni-classa" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                CATEGORY 02 &bull; FORMAL & CEREMONIAL
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - CLASS A</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"This uniform is intended for formal and ceremonial events. (Please adjust the insignia according to your rank)"</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-classa-m" onclick="switchUniformGender('classa', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-classa-fm" onclick="switchUniformGender('classa', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
-                        
-                        <!-- Duty Gear Checklist -->
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
-                            <h4 class="text-xs font-bold text-lssd-gold uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                                <i class="fa-solid fa-toolbox"></i> Peralatan Wajib Personel Berseragam (Section 326):
-                            </h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-[11px] text-slate-300">
-                                <span>&bull; Body Armor (di dalam baju)</span>
-                                <span>&bull; Sabuk Sam Browne</span>
-                                <span>&bull; Tongkat Pemukul (Baton)</span>
-                                <span>&bull; TASER (Duty Belt Wajib)</span>
-                                <span>&bull; Hobble Restraint Device</span>
-                                <span>&bull; General Duty Helmet</span>
-                                <span>&bull; Traffic Citation Books</span>
-                                <span>&bull; Flashlight (Senter)</span>
-                                <span>&bull; Handheld Radio Portable</span>
-                                <span>&bull; Buku Catatan & Pulpen</span>
-                                <span>&bull; Kunci Borgol Cadangan</span>
-                                <span>&bull; PPE Kit (Sarung tangan & N95)</span>
-                            </div>
-
-                            <div class="mt-3 pt-3 border-t border-lssd-border text-[11px] text-slate-400">
-                                <b>Plainclothes Gear:</b> Senjata dinas approved, lencana resmi (badge), kartu identitas departemen, borgol + kunci, amunisi cadangan, dan pulpen/catatan.
+                    <div id="view-classa-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-amber-300 font-bold block">Tampak Depan (Front) &bull; Class A Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classa_m1.png', 'LSSD Uniform - CLASS A (Male Front)', 'Kemeja lengan panjang, dasi hitam, topi campaign hat, insignia pangkat')">
+                                <img src="assets/images/uniforms/classa_m1.png" alt="Class A Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
                             </div>
                         </div>
-
-                        <!-- Uniform Classifications -->
-                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border space-y-2">
-                            <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                                <i class="fa-solid fa-shirt"></i> Klasifikasi Seragam Resmi (Section 320):
-                            </h4>
-                            <div class="p-2 rounded bg-lssd-base border border-lssd-border text-[11px]">
-                                <b class="text-white">Class A:</b> Kemeja lengan panjang, banded collar, dan dasi resmi. Wajib untuk acara formal, upacara, atau perintah pimpinan.
-                            </div>
-                            <div class="p-2 rounded bg-lssd-base border border-lssd-border text-[11px]">
-                                <b class="text-white">Class B (Opsional):</b> Kemeja lengan panjang sport collar tanpa dasi, kaos dalam hitam/putih. Standar operasional harian.
-                            </div>
-                            <div class="p-2 rounded bg-lssd-base border border-lssd-border text-[11px]">
-                                <b class="text-white">Class C (Opsional):</b> Kemeja lengan pendek sport collar tanpa dasi, kaos dalam putih. Standar operasional harian.
-                            </div>
-                            <div class="p-2 rounded bg-lssd-base border border-lssd-border text-[11px]">
-                                <b class="text-rose-400">SEB Jumpsuit & Utility:</b> Khusus personel SEB (seragam cokelat tan tahan api/asam atau tactical green two-piece).
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-amber-300 font-bold block">Tampak Belakang (Back) &bull; Class A Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classa_m2.png', 'LSSD Uniform - CLASS A (Male Back)', 'Detail sabuk dinas dan topi')">
+                                <img src="assets/images/uniforms/classa_m2.png" alt="Class A Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tattoo & Badge Policy -->
-                    <div class="mt-4 pt-4 border-t border-lssd-border grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                        <div class="bg-lssd-base p-3 rounded-lg border border-rose-500/30">
-                            <strong class="text-rose-400 block mb-0.5"><i class="fa-solid fa-ban mr-1"></i> Kebijakan Tato (Section 310.40):</strong>
-                            <p class="text-slate-300 text-[11px]">
-                                Tato pada area wajah <b>dilarang keras (strictly prohibited)</b> bagi seluruh personel. Tato pada tangan/lengan wajib ditutupi seragam lengan panjang atau baju bisnis saat bertugas.
-                            </p>
+                    <div id="view-classa-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-amber-300 font-bold block">Tampak Depan (Front) &bull; Class A Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classa_fm1.png', 'LSSD Uniform - CLASS A (Female Front)', 'Kemeja lengan panjang, dasi resmi, campaign hat')">
+                                <img src="assets/images/uniforms/classa_fm1.png" alt="Class A Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
                         </div>
-                        <div class="bg-lssd-base p-3 rounded-lg border border-lssd-border">
-                            <strong class="text-lssd-gold block mb-0.5"><i class="fa-solid fa-id-card mr-1"></i> Penggunaan Lencana (Section 400.10):</strong>
-                            <p class="text-slate-300 text-[11px]">
-                                Personel berseragam wajib menyematkan badge resmi di pakaian terluar. Personel plainclothes/undercover wajib selalu membawa lencana agar dapat ditunjukkan saat dinas.
-                            </p>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-amber-300 font-bold block">Tampak Belakang (Back) &bull; Class A Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classa_fm2.png', 'LSSD Uniform - CLASS A (Female Back)', 'Detail sabuk dinas dan celana')">
+                                <img src="assets/images/uniforms/classa_fm2.png" alt="Class A Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. CLASS B -->
+                <div id="uni-classb" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                                CATEGORY 03 &bull; DAILY PATROL STANDARD
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - CLASS B</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"For daily patrol and general duty use. (Please adjust the insignia according to your rank)"</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-classb-m" onclick="switchUniformGender('classb', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-classb-fm" onclick="switchUniformGender('classb', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="view-classb-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Depan (Front) &bull; Class B Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classb_m1.png', 'LSSD Uniform - CLASS B (Male Front)', 'Seragam patroli harian lengan pendek, badge, body cam BWV, sabuk Sam Browne')">
+                                <img src="assets/images/uniforms/classb_m1.png" alt="Class B Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Belakang (Back) &bull; Class B Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classb_m2.png', 'LSSD Uniform - CLASS B (Male Back)', 'Borgol belakang, radio holder, baton')">
+                                <img src="assets/images/uniforms/classb_m2.png" alt="Class B Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-classb-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Depan (Front) &bull; Class B Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classb_fm1.png', 'LSSD Uniform - CLASS B (Female Front)', 'Seragam patroli harian lengan pendek wanita')">
+                                <img src="assets/images/uniforms/classb_fm1.png" alt="Class B Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Belakang (Back) &bull; Class B Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/classb_fm2.png', 'LSSD Uniform - CLASS B (Female Back)', 'Tampilan sabuk dan perlengkapan belakang')">
+                                <img src="assets/images/uniforms/classb_fm2.png" alt="Class B Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. TRAINEE / ROOKS -->
+                <div id="uni-trainee" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-yellow-500/20 text-yellow-300 border border-yellow-500/40">
+                                CATEGORY 04 &bull; RECRUIT ONBOARDING
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - Trainee/Rooks</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"This uniform is worn by personnel onboarded at the LSSD who hold the rank of Deputy Trainee."</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-trainee-m" onclick="switchUniformGender('trainee', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-trainee-fm" onclick="switchUniformGender('trainee', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="view-trainee-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-yellow-300 font-bold block">Tampak Depan (Front) &bull; Trainee Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/trainee_m1.png', 'LSSD Uniform - Trainee (Male Front)', 'Kemeja putih lengan panjang, dasi hitam, celana hitam formal, badge trainee')">
+                                <img src="assets/images/uniforms/trainee_m1.png" alt="Trainee Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-yellow-300 font-bold block">Tampak Belakang (Back) &bull; Trainee Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/trainee_m2.png', 'LSSD Uniform - Trainee (Male Back)', 'Borgol belakang dan holster trainee')">
+                                <img src="assets/images/uniforms/trainee_m2.png" alt="Trainee Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-trainee-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-yellow-300 font-bold block">Tampak Depan (Front) &bull; Trainee Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/trainee_fm1.png', 'LSSD Uniform - Trainee (Female Front)', 'Kemeja putih lengan panjang, dasi resmi wanita, celana hitam')">
+                                <img src="assets/images/uniforms/trainee_fm1.png" alt="Trainee Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-yellow-300 font-bold block">Tampak Belakang (Back) &bull; Trainee Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/trainee_fm2.png', 'LSSD Uniform - Trainee (Female Back)', 'Tampilan sabuk dan perlengkapan belakang')">
+                                <img src="assets/images/uniforms/trainee_fm2.png" alt="Trainee Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. OPERATION / CODE 6 -->
+                <div id="uni-operation" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-red-500/20 text-red-300 border border-red-500/40">
+                                CATEGORY 05 &bull; TACTICAL CODE 6
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - Operation / Code 6</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Zacc Hilton</b> &bull; Seragam tempur taktis operasi bersenjata berat, raid, dan penggerebekan Code-6.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold bg-red-950/80 text-red-300 border border-red-500/40">
+                            SPECIAL OPS ONLY
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-red-300 font-bold block">Tampak Depan (Front) &bull; Tactical Rig</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/operation_m1.png', 'LSSD Uniform - Operation / Code 6 (Front)', 'Tactical combat shirt, plate carrier lapis baja, helm pelindung balistik')">
+                                <img src="assets/images/uniforms/operation_m1.png" alt="Operation Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-red-300 font-bold block">Tampak Belakang (Back) &bull; Tactical Rig</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/operation_m2.png', 'LSSD Uniform - Operation / Code 6 (Back)', 'Tactical backpack, hydration pack, radio harness')">
+                                <img src="assets/images/uniforms/operation_m2.png" alt="Operation Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. ADMINISTRATIVE -->
+                <div id="uni-administrative" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                                CATEGORY 06 &bull; HIGH COMMAND & EXECUTIVE
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - Administrative</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"This uniform is exclusively used by and intended for High Command, Executive Staff, and Command Personnel."</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-administrative-m" onclick="switchUniformGender('administrative', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-administrative-fm" onclick="switchUniformGender('administrative', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="view-administrative-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Depan (Front) &bull; Administrative Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/administrative_m1.png', 'LSSD Uniform - Administrative (Male Front)', 'Kemeja dinas eksekutif pimpinan, dasi, lencana emas Sheriff')">
+                                <img src="assets/images/uniforms/administrative_m1.png" alt="Administrative Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Belakang (Back) &bull; Administrative Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/administrative_m2.png', 'LSSD Uniform - Administrative (Male Back)', 'Detail sabuk dinas eksekutif')">
+                                <img src="assets/images/uniforms/administrative_m2.png" alt="Administrative Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-administrative-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Depan (Front) &bull; Administrative Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/administrative_fm1.png', 'LSSD Uniform - Administrative (Female Front)', 'Kemeja dinas eksekutif pimpinan wanita')">
+                                <img src="assets/images/uniforms/administrative_fm1.png" alt="Administrative Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-purple-300 font-bold block">Tampak Belakang (Back) &bull; Administrative Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/administrative_fm2.png', 'LSSD Uniform - Administrative (Female Back)', 'Tampilan sabuk dan celana')">
+                                <img src="assets/images/uniforms/administrative_fm2.png" alt="Administrative Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. JACKET -->
+                <div id="uni-jacket" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                                CATEGORY 07 &bull; BONUS 2+ RESTRICTED
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - Jacket</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"This uniform is restricted to the rank of Deputy Sheriff Bonus 2 and above."</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-jacket-m" onclick="switchUniformGender('jacket', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-jacket-fm" onclick="switchUniformGender('jacket', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="view-jacket-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Depan (Front) &bull; Jacket Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/jacket_m1.png', 'LSSD Uniform - Jacket (Male Front)', 'Jaket hijau sheriff tahan cuaca, badge, campaign hat')">
+                                <img src="assets/images/uniforms/jacket_m1.png" alt="Jacket Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Belakang (Back) &bull; Jacket Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/jacket_m2.png', 'LSSD Uniform - Jacket (Male Back)', 'Tulisan LOS SANTOS SHERIFF di punggung jaket')">
+                                <img src="assets/images/uniforms/jacket_m2.png" alt="Jacket Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-jacket-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Depan (Front) &bull; Jacket Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/jacket_fm1.png', 'LSSD Uniform - Jacket (Female Front)', 'Jaket hijau sheriff wanita')">
+                                <img src="assets/images/uniforms/jacket_fm1.png" alt="Jacket Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-emerald-300 font-bold block">Tampak Belakang (Back) &bull; Jacket Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/jacket_fm2.png', 'LSSD Uniform - Jacket (Female Back)', 'Tulisan LOS SANTOS SHERIFF di punggung jaket wanita')">
+                                <img src="assets/images/uniforms/jacket_fm2.png" alt="Jacket Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. REX UNIT -->
+                <div id="uni-rex" class="bg-lssd-card rounded-2xl p-5 sm:p-6 border border-lssd-border shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-lssd-border">
+                        <div>
+                            <span class="px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                                CATEGORY 08 &bull; MOTORCYCLE OPERATOR
+                            </span>
+                            <h4 class="text-base sm:text-lg font-bold text-white mt-1">LSSD Uniform - REX Unit</h4>
+                            <p class="text-xs text-slate-300">Author: <b class="text-rose-400">Valentine Anastacius Mildred G.</b> &bull; <i>"This uniform is used when operating a motorcycle unit, and is restricted to certified riders."</i></p>
+                        </div>
+                        <div class="inline-flex rounded-xl bg-lssd-dark p-1 border border-lssd-border flex-shrink-0">
+                            <button id="btn-gen-rex-m" onclick="switchUniformGender('rex', 'm')" class="px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base">
+                                <i class="fa-solid fa-mars mr-1"></i> Pria (Male)
+                            </button>
+                            <button id="btn-gen-rex-fm" onclick="switchUniformGender('rex', 'fm')" class="px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-venus mr-1"></i> Wanita (Female)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="view-rex-m" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-cyan-300 font-bold block">Tampak Depan (Front) &bull; REX Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/rex_m1.png', 'LSSD Uniform - REX Unit (Male Front)', 'Seragam patroli motor berjaket kulit/sleeve, helm motor, riding boots')">
+                                <img src="assets/images/uniforms/rex_m1.png" alt="REX Male Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-cyan-300 font-bold block">Tampak Belakang (Back) &bull; REX Male</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/rex_m2.png', 'LSSD Uniform - REX Unit (Male Back)', 'Detail sabuk dinas motor dan helm')">
+                                <img src="assets/images/uniforms/rex_m2.png" alt="REX Male Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="view-rex-fm" class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-cyan-300 font-bold block">Tampak Depan (Front) &bull; REX Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/rex_fm1.png', 'LSSD Uniform - REX Unit (Female Front)', 'Seragam patroli motor wanita, helm, riding boots')">
+                                <img src="assets/images/uniforms/rex_fm1.png" alt="REX Female Front" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lssd-dark p-3 rounded-xl border border-lssd-border text-center space-y-2">
+                            <span class="text-[11px] font-mono text-cyan-300 font-bold block">Tampak Belakang (Back) &bull; REX Female</span>
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg border border-lssd-border bg-black/40" onclick="openUniformModal('assets/images/uniforms/rex_fm2.png', 'LSSD Uniform - REX Unit (Female Back)', 'Tampilan sabuk dan perlengkapan belakang')">
+                                <img src="assets/images/uniforms/rex_fm2.png" alt="REX Female Back" class="w-full max-h-96 object-contain group-hover:scale-105 transition duration-300">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-xs text-white font-bold gap-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-lssd-gold text-lg"></i> Klik untuk Zoom Angka FiveM
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <!-- 5. FIELD EQUIPMENT & POLICY STANDARDS -->
+            <div id="dutyGearSection" class="bg-lssd-dark rounded-2xl p-5 sm:p-7 border border-lssd-border space-y-6">
+                <div>
+                    <span class="text-[10px] text-lssd-gold font-bold uppercase tracking-widest font-mono">SECTIONS 320 - 326</span>
+                    <h3 class="text-lg font-bold text-white mt-1 flex items-center gap-2">
+                        <i class="fa-solid fa-toolbox text-amber-400"></i> Standar Sabuk Sam Browne & Kebijakan Kedinasan
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+                    
+                    <!-- Duty Gear Checklist -->
+                    <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                        <h4 class="text-xs font-bold text-lssd-gold uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <i class="fa-solid fa-toolbox"></i> Peralatan Wajib Sabuk Sam Browne (Section 326):
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-slate-300">
+                            <span>&bull; Body Armor (Lapis Baja Dalam)</span>
+                            <span>&bull; Sabuk Kulit Sam Browne Approved</span>
+                            <span>&bull; Tongkat Pemukul Polisi (Baton)</span>
+                            <span>&bull; TASER X26P (Sisi Non-Dominan)</span>
+                            <span>&bull; Hobble Restraint Device</span>
+                            <span>&bull; General Duty Campaign Hat / Helmet</span>
+                            <span>&bull; Buku Tilang (Traffic Citation)</span>
+                            <span>&bull; Senter Taktis Lapangan (Flashlight)</span>
+                            <span>&bull; Handheld Radio HT Portable</span>
+                            <span>&bull; Buku Catatan & Pulpen Dinas</span>
+                            <span>&bull; Kunci Borgol Cadangan</span>
+                            <span>&bull; PPE Kit (Sarung Tangan Nitril & N95)</span>
+                        </div>
+
+                        <div class="mt-3 pt-3 border-t border-lssd-border text-[11px] text-slate-400">
+                            <b>Plainclothes Gear:</b> Senjata dinas approved, lencana resmi (badge), kartu identitas departemen, borgol + kunci, amunisi cadangan, dan pulpen/catatan.
+                        </div>
+                    </div>
+
+                    <!-- Tattoo & Badge Policy -->
+                    <div class="space-y-4">
+                        <div class="bg-lssd-card p-4 rounded-xl border border-rose-500/30">
+                            <strong class="text-rose-400 block mb-1 text-xs"><i class="fa-solid fa-ban mr-1"></i> Kebijakan Tato (Section 310.40):</strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Tato pada area wajah <b>dilarang keras (strictly prohibited)</b> bagi seluruh personel. Tato pada tangan/lengan wajib ditutupi seragam lengan panjang atau baju bisnis saat bertugas dinas resmi.
+                            </p>
+                        </div>
+                        <div class="bg-lssd-card p-4 rounded-xl border border-lssd-border">
+                            <strong class="text-lssd-gold block mb-1 text-xs"><i class="fa-solid fa-id-card mr-1"></i> Penggunaan Lencana (Section 400.10):</strong>
+                            <p class="text-slate-300 text-[11px] leading-relaxed">
+                                Personel berseragam wajib menyematkan badge resmi di pakaian terluar. Personel plainclothes/undercover wajib selalu membawa lencana agar dapat ditunjukkan saat dinas.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /PAGE: FLEET & UNIFORM AUTHORITY -->
 
 
             <!-- 6. INVESTIGASI & REGULASI INTERNAL -->
@@ -3507,6 +4196,30 @@
         </div>
     </div>
 
+    <!-- Uniform Lightbox Modal -->
+    <div id="uniformModal" class="fixed inset-0 z-50 bg-black/90 hidden flex flex-col items-center justify-center p-3 sm:p-6 backdrop-blur-md" onclick="if(event.target === this) closeUniformModal()">
+        <div class="relative max-w-5xl w-full max-h-[92vh] bg-lssd-dark border border-lssd-gold/40 rounded-2xl flex flex-col overflow-hidden shadow-2xl">
+            <div class="flex items-center justify-between px-4 py-3 border-b border-lssd-border bg-lssd-base">
+                <div>
+                    <h3 id="uniformModalTitle" class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-shirt text-lssd-gold"></i> Detail Seragam LSSD
+                    </h3>
+                    <p id="uniformModalDesc" class="text-[11px] text-slate-400 truncate max-w-md"></p>
+                </div>
+                <button onclick="closeUniformModal()" class="text-slate-400 hover:text-white p-1.5 rounded-lg bg-lssd-card border border-lssd-border hover:border-slate-500 transition">
+                    <i class="fa-solid fa-xmark text-base"></i>
+                </button>
+            </div>
+            <div class="flex-1 overflow-auto p-2 sm:p-4 flex items-center justify-center bg-black/60">
+                <img id="uniformModalImg" src="" alt="Uniform Preview" class="max-h-[75vh] w-auto object-contain rounded-lg border border-lssd-border shadow-lg">
+            </div>
+            <div class="px-4 py-2.5 border-t border-lssd-border bg-lssd-base flex items-center justify-between text-[11px] text-slate-400">
+                <span><i class="fa-solid fa-magnifying-glass mr-1 text-lssd-gold"></i> Periksa nomor <b>Drawable & Texture</b> pada menu clothing store di sebelah kiri screenshot</span>
+                <button onclick="closeUniformModal()" class="px-3.5 py-1.5 bg-lssd-card hover:bg-slate-700 text-slate-200 rounded-lg text-xs font-semibold">Tutup</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Notification Container -->
     <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 ease-out bg-lssd-dark border border-lssd-gold text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 pointer-events-none">
         <i id="toastIcon" class="fa-solid fa-circle-check text-lssd-gold text-lg"></i>
@@ -3659,6 +4372,60 @@
                 setTimeout(() => el.classList.remove('search-highlight-flash'), 2500);
             }
         }
+
+        // Uniform Lightbox Modal Handlers
+        function openUniformModal(imgSrc, title, desc) {
+            const modal = document.getElementById('uniformModal');
+            const img = document.getElementById('uniformModalImg');
+            const titleEl = document.getElementById('uniformModalTitle');
+            const descEl = document.getElementById('uniformModalDesc');
+            if (!modal || !img) return;
+            img.src = imgSrc;
+            if (titleEl) titleEl.innerText = title;
+            if (descEl) descEl.innerText = desc || '';
+            modal.classList.remove('hidden');
+        }
+
+        function closeUniformModal() {
+            const modal = document.getElementById('uniformModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        // Uniform Gender Switcher (Male / Female)
+        function switchUniformGender(catId, gender) {
+            const viewM = document.getElementById('view-' + catId + '-m');
+            const viewFm = document.getElementById('view-' + catId + '-fm');
+            const btnM = document.getElementById('btn-gen-' + catId + '-m');
+            const btnFm = document.getElementById('btn-gen-' + catId + '-fm');
+            if (!viewM || !viewFm) return;
+            if (gender === 'm') {
+                viewM.classList.remove('hidden');
+                viewFm.classList.add('hidden');
+                if (btnM) {
+                    btnM.className = 'px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base shadow-sm';
+                }
+                if (btnFm) {
+                    btnFm.className = 'px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white';
+                }
+            } else {
+                viewFm.classList.remove('hidden');
+                viewM.classList.add('hidden');
+                if (btnFm) {
+                    btnFm.className = 'px-3 py-1 rounded-lg text-xs font-bold transition bg-lssd-gold text-lssd-base shadow-sm';
+                }
+                if (btnM) {
+                    btnM.className = 'px-3 py-1 rounded-lg text-xs font-bold transition text-slate-400 hover:text-white';
+                }
+            }
+        }
+
+        // Global Esc Key Handler
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeUniformModal();
+                closeProfileModal();
+            }
+        });
 
         // Live 10-Codes Filter
         function filterTenCodes() {
